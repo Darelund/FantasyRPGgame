@@ -1,2 +1,4 @@
 # RPGgame
- Making a RPG game to practice programming
+ Making a RPG game to practice our programming
+ 
+
