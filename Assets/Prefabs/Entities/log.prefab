@@ -116,7 +116,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3696554822108413149}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -126,7 +126,7 @@ Rigidbody2D:
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!61 &3696554822108413145
@@ -168,10 +168,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
-  entitieName: Log
-  baseAttack: 0
-  movespeed: 0
+  entitieName: Harry the Log
+  baseAttack: 1
+  movespeed: 1.5
   target: {fileID: 0}
-  chaseRadius: 0
-  attackRadius: 0
+  chaseRadius: 4
+  attackRadius: 1
   homePosition: {fileID: 0}

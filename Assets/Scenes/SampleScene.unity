@@ -27926,10 +27926,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BabyLog
       objectReference: {fileID: 0}
-    - target: {fileID: 5104183354994004282, guid: b5f203659f9f60e448e186df6880dac8, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5f203659f9f60e448e186df6880dac8, type: 3}
 --- !u!1 &310043159
@@ -28229,6 +28225,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1935563082}
     m_Modifications:
+    - target: {fileID: 3235033055049646925, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
+      propertyPath: movespeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235033055049646925, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
+      propertyPath: baseAttack
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235033055049646925, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
+      propertyPath: chaseRadius
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235033055049646925, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
+      propertyPath: entitieName
+      value: Frank the Log
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235033055049646925, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
+      propertyPath: attackRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696554822108413144, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696554822108413144, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3696554822108413146, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -29046,6 +29070,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1935563082}
     m_Modifications:
+    - target: {fileID: 3235033055049646925, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
+      propertyPath: movespeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235033055049646925, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
+      propertyPath: baseAttack
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235033055049646925, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
+      propertyPath: chaseRadius
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235033055049646925, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
+      propertyPath: entitieName
+      value: Sara the Log
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235033055049646925, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
+      propertyPath: attackRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696554822108413144, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696554822108413144, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3696554822108413146, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -38032,6 +38084,7 @@ GameObject:
   - component: {fileID: 1015107588}
   - component: {fileID: 1015107592}
   - component: {fileID: 1015107593}
+  - component: {fileID: 1015107594}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -38191,6 +38244,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1015107594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015107587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4c71356aeaf74041850b4b849a525b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 4
+  knockTime: 2
 --- !u!1 &1023548055
 GameObject:
   m_ObjectHideFlags: 0
@@ -40458,23 +40525,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3235033055049646925, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
       propertyPath: movespeed
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 3235033055049646925, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
-      propertyPath: baseAttack
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3235033055049646925, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
-      propertyPath: chaseRadius
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3235033055049646925, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
-      propertyPath: entitieName
-      value: Harry the Log
-      objectReference: {fileID: 0}
-    - target: {fileID: 3235033055049646925, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
-      propertyPath: attackRadius
-      value: 1
+    - target: {fileID: 3696554822108413144, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
+      propertyPath: m_BodyType
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3696554822108413146, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
       propertyPath: m_RootOrder
@@ -40482,11 +40537,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3696554822108413146, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.809999
+      value: -22.69
       objectReference: {fileID: 0}
     - target: {fileID: 3696554822108413146, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.58
+      value: -8.91
       objectReference: {fileID: 0}
     - target: {fileID: 3696554822108413146, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -40523,10 +40578,6 @@ PrefabInstance:
     - target: {fileID: 3696554822108413149, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
       propertyPath: m_Name
       value: log
-      objectReference: {fileID: 0}
-    - target: {fileID: 3696554822108413149, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17be1a8999d621546a5873b6d071e10b, type: 3}
