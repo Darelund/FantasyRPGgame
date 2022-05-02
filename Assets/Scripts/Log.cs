@@ -32,10 +32,13 @@ public class Log : Entities
         // if chase radius is more or equal to the distance between target and object with this script then run if
         if(Vector3.Distance(target.position, transform.position) <= chaseRadius && Vector3.Distance(target.position, transform.position) > attackRadius)
         {
-            Vector3 temp = Vector3.MoveTowards(transform.position, target.position, movespeed * Time.deltaTime);
+            if(currentState == EntitiesState.idle || currentState == EntitiesState.walk)
+            {
+                Vector3 temp = Vector3.MoveTowards(transform.position, target.position, movespeed * Time.deltaTime);
 
-            logRigidbody.MovePosition(temp);
-            ChangeState(EntitiesState.walk);
+                logRigidbody.MovePosition(temp);
+                ChangeState(EntitiesState.walk);
+            }       
         }
     }
 
