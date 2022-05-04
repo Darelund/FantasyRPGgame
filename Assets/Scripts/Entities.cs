@@ -17,15 +17,21 @@ public class Entities : MonoBehaviour
     public string entitieName;
     public int baseAttack;
     public float movespeed;
-    // Start is called before the first frame update
-    void Start()
+
+    public void Knock(Rigidbody2D entitieRigidbody, float knockTime)
     {
-        
+        StartCoroutine(KnockCo(entitieRigidbody, knockTime));
     }
 
-    // Update is called once per frame
-    void Update()
+
+    private IEnumerator KnockCo(Rigidbody2D entitieRigidbody, float knockTime)
     {
-        
+        if (entitieRigidbody != null)
+        {
+            yield return new WaitForSeconds(knockTime);
+            entitieRigidbody.velocity = Vector2.zero;
+            currentState = EntitiesState.idle;
+            entitieRigidbody.velocity = Vector2.zero;
+        }
     }
 }

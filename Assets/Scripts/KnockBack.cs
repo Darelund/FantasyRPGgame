@@ -8,30 +8,33 @@ public class KnockBack : MonoBehaviour
     public float knockTime;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Breakable") && this.gameObject.CompareTag("Player"))
         {
-            Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
-            if(enemy != null)
+            other.GetComponent<Breakable>().Smash();
+        }
+        if (other.gameObject.CompareTag("Entities") || other.gameObject.CompareTag("Player"))
+        {
+            Rigidbody2D hit = other.GetComponent<Rigidbody2D>();
+            if(hit != null)
             {
-             
-                enemy.GetComponent<Entities>().currentState = EntitiesState.stagger;
-                Vector2 difference = enemy.transform.position - transform.position;
+                Vector2 difference = hit.transform.position - transform.position;
                 difference = difference.normalized * thrust;
-                enemy.AddForce(difference, ForceMode2D.Impulse);
-                StartCoroutine(KnockCo(enemy));
-              
+                hit.AddForce(difference, ForceMode2D.Impulse);
+
+                if (other.gameObject.CompareTag("Entities"))
+                {
+                    hit.GetComponent<Entities>().currentState = EntitiesState.stagger;
+                    other.GetComponent<Entities>().Knock(hit, knockTime);
+                }
+
+                if (other.gameObject.CompareTag("Player"))
+                {
+                    hit.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
+                    other.GetComponent<PlayerMovement>().Knock(knockTime);
+                }                                    
             }
         }
     }
-
-    private IEnumerator KnockCo(Rigidbody2D enemy)
-    {    
-       if(enemy != null)
-        {
-            yield return new WaitForSeconds(knockTime);
-            enemy.velocity = Vector2.zero;
-          
-            enemy.GetComponent<Entities>().currentState = EntitiesState.idle;
-        }    
-    }
 }
+
+
