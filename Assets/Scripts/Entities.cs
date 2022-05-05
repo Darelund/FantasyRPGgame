@@ -13,10 +13,16 @@ public enum EntitiesState
 public class Entities : MonoBehaviour
 {
     public EntitiesState currentState;
-    public int health;
+    public FloatValue maxHealth;
+    public float health;
     public string entitieName;
     public int baseAttack;
     public float movespeed;
+
+    private void Awake()
+    {
+        health = maxHealth.initialValue;
+    }
 
     public void Knock(Rigidbody2D entitieRigidbody, float knockTime)
     {
