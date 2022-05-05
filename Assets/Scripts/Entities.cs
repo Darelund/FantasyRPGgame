@@ -13,7 +13,7 @@ public enum EntitiesState
 public class Entities : MonoBehaviour
 {
     public EntitiesState currentState;
-    public FloatValue maxHealth;
+    public float maxHealth;
     public float health;
     public string entitieName;
     public int baseAttack;
@@ -21,13 +21,24 @@ public class Entities : MonoBehaviour
 
     private void Awake()
     {
-        health = maxHealth.initialValue;
+       maxHealth = health;
     }
 
-    public void Knock(Rigidbody2D entitieRigidbody, float knockTime)
+    private void TakeDamage(float damage)
+    {
+        health -= damage;
+        if(health <= 0)
+        {
+            this.gameObject.SetActive(false);
+        }
+    }
+
+    public void Knock(Rigidbody2D entitieRigidbody, float knockTime, float damage)
     {
         StartCoroutine(KnockCo(entitieRigidbody, knockTime));
+        TakeDamage(damage);
     }
+    
 
 
     private IEnumerator KnockCo(Rigidbody2D entitieRigidbody, float knockTime)
