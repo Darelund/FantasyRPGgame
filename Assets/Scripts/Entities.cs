@@ -8,6 +8,7 @@ public enum EntitiesState
     walk,
     attack,
     stagger
+
 }
 
 public class Entities : MonoBehaviour

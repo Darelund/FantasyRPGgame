@@ -35,16 +35,20 @@ public class PlayerMovement : MonoBehaviour
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
       
+        // if space and currentstate is not attack and stagger, play attack animation
         if(Input.GetKeyDown(KeyCode.Space) && currentState != PlayerState.attack && currentState != PlayerState.stagger)
         {
             StartCoroutine(AttackCo());
         }
 
+        // If character is on walk or idle play animation and walk method
        else if(currentState == PlayerState.walk || currentState == PlayerState.idle)
         {
             UpdateAnimationAndMove();
         }                   
     }
+
+    // Attack animation method
     private IEnumerator AttackCo()
     {
         playerAnimator.SetBool("attacking", true);
@@ -54,6 +58,8 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(.3f);
         currentState = PlayerState.walk;
     }
+
+    // Method to update character animation
     void UpdateAnimationAndMove()
     {
         if (change != Vector3.zero)
@@ -68,17 +74,19 @@ public class PlayerMovement : MonoBehaviour
             playerAnimator.SetBool("moving", false);
         }
     }
-
+    // Move character method
     void MoveCharacter()
     {
         playerRigidbody.MovePosition(transform.position + change.normalized * Time.fixedDeltaTime * speed);
     }
 
+    // Coroutine for knocktime
     public void Knock(float knockTime)
     {
         StartCoroutine(KnockCo(knockTime));
     }
 
+    // Knocktime 
     private IEnumerator KnockCo(float knockTime)
     {
         if (playerRigidbody != null)
