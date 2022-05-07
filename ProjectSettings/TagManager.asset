@@ -43,6 +43,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Floor
+    uniqueID: 3045366345
+    locked: 0
   - name: Sign
     uniqueID: 4212247763
     locked: 0
