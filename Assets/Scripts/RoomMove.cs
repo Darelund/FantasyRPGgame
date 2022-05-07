@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class RoomMove : MonoBehaviour
 {
     // Offsets 
-    public Vector2 cameraChange;
+    public Vector2 minCameraChange;
+    public Vector2 maxCameraChange;
     public Vector3 playerChange;
 
     public bool needText;
@@ -35,8 +36,8 @@ public class RoomMove : MonoBehaviour
         // Check to see if player is in trigger zone, if thats true then we want to change camera offset
         if(other.CompareTag("Player") && !other.isTrigger)
         {
-            cam.minPosition += cameraChange;
-            cam.maxPosition += cameraChange;
+            cam.minPosition += minCameraChange;
+            cam.maxPosition += maxCameraChange;
             other.transform.position += playerChange;
             if(needText)
             {
