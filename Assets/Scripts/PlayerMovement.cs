@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D playerRigidbody;
     private Vector3 change;
     private Animator playerAnimator;
+    public FloatValue currentHealth;
+    public SignalObserver playerHealthSignal;
     // Start is called before the first frame update
     void Start()
     {
@@ -81,9 +83,18 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Coroutine for knocktime
-    public void Knock(float knockTime)
+    public void Knock(float knockTime, float damage)
     {
-        StartCoroutine(KnockCo(knockTime));
+        currentHealth.RunTimeValue -= damage;
+        playerHealthSignal.Raise();
+        if (currentHealth.RunTimeValue > 0)
+        {       
+            StartCoroutine(KnockCo(knockTime));
+        }     
+       else
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 
     // Knocktime 
