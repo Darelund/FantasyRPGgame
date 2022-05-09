@@ -75,6 +75,9 @@ MonoBehaviour:
   sceneToLoad: SpawnHouse
   playerPosition: {x: 0, y: -5}
   playerStorage: {fileID: 11400000, guid: 2ed6dfa3eee8b5b4a8c6d8d51527e11e, type: 2}
+  fadeInPanel: {fileID: 2453447154045647481, guid: a33702f7b7027df4e97608cb6f60e071, type: 3}
+  fadeOutPanel: {fileID: 8711880565618788614, guid: 171080072df27e54285d05d739a634dd, type: 3}
+  fadeWait: 0.33
 --- !u!212 &-7251660893379902014
 SpriteRenderer:
   m_ObjectHideFlags: 0

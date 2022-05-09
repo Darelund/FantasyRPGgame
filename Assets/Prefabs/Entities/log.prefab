@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3186697809751580682}
   - component: {fileID: 3186697809751580683}
   - component: {fileID: 3186697809751580685}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: log
   m_TagString: Entities
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -318768787
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -1722594703, guid: 52c5729fcfbb09e4391aacdb83ad5f79, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  maxHealth: {fileID: 11400000, guid: 7773f953eb061b148a56239ae91aea49, type: 2}
+  maxHealth: 0
   health: 1
   entitieName: Frank the Log
   baseAttack: 1
@@ -220,3 +220,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 4
   knockTime: 0.3
+  damage: 0
