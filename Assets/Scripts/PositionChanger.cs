@@ -5,7 +5,11 @@ using UnityEngine;
 public class PositionChanger : MonoBehaviour
 {
     public Vector3 spawnPosition;
+    public Transform player;
+    public Camera cameraCamera;
 
+    public float offsetX = -9;
+    public float offsetY = -4;
     private void Awake()
     {
 
@@ -16,7 +20,8 @@ public class PositionChanger : MonoBehaviour
         if (other.CompareTag("Player") && !other.isTrigger)
         {
             other.transform.position = spawnPosition;
-
+            
+            cameraCamera.transform.position = new Vector3(player.transform.position.x + offsetX, player.transform.position.y + offsetY, -10);
         }
     }
 }
