@@ -19,6 +19,8 @@ public class Entities : MonoBehaviour
     public string entitieName;
     public int baseAttack;
     public float movespeed;
+    public GameObject deathEffect;
+    public float deathEffectTimer = 1f;
 
     private void Awake()
     {
@@ -30,7 +32,17 @@ public class Entities : MonoBehaviour
         health -= damage;
         if(health <= 0)
         {
-            this.gameObject.SetActive(false);
+            DeathEffect();
+            this.gameObject.SetActive(false);       
+        }
+    }
+
+    private void DeathEffect()
+    {
+        if(deathEffect != null)
+        {
+            GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
+            Destroy(effect, deathEffectTimer);
         }
     }
 

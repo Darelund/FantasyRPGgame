@@ -50,7 +50,7 @@ public class Door : Interactable
                     // If so, call the open method
                     Open();
                 }
-
+                
 
             }
         }

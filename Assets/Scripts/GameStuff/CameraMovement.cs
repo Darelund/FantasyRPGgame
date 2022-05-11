@@ -11,9 +11,16 @@ public class CameraMovement : MonoBehaviour
     // Bounderies for camera to not go outside the map
     public Vector2 maxPosition;
     public Vector2 minPosition;
+
+    public Animator anim;
+
+
+
+
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
     }
 
@@ -32,5 +39,17 @@ public class CameraMovement : MonoBehaviour
             // will move from a to b, so from transform.position to the targets position with smoothing(How quickly it moves towards targets position)
             transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing);
         }
+    }
+
+    public void BeginKick()
+    {
+        anim.SetBool("kick_active", true);
+        StartCoroutine(KickCo());
+    }
+
+    public IEnumerator KickCo()
+    {
+        yield return null;
+        anim.SetBool("kick_active", false);
     }
 }

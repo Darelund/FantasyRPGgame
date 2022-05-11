@@ -977,13 +977,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_41
+      name: Heart_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 258
-        width: 11
-        height: 11
+        x: 0
+        y: 256
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -998,13 +998,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_42
+      name: Heart_1
       rect:
         serializedVersion: 2
-        x: 19
-        y: 258
-        width: 10
-        height: 11
+        x: 16
+        y: 256
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1019,13 +1019,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_43
+      name: coin_2
       rect:
         serializedVersion: 2
-        x: 36
-        y: 243
-        width: 9
-        height: 26
+        x: 32
+        y: 240
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1040,13 +1040,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_44
+      name: Heart_3
       rect:
         serializedVersion: 2
-        x: 51
-        y: 258
-        width: 10
-        height: 11
+        x: 48
+        y: 256
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1064,10 +1064,10 @@ TextureImporter:
       name: objects_45
       rect:
         serializedVersion: 2
-        x: 65
+        x: 63
         y: 256
-        width: 13
-        height: 15
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1085,10 +1085,10 @@ TextureImporter:
       name: objects_46
       rect:
         serializedVersion: 2
-        x: 81
+        x: 79
         y: 256
-        width: 14
-        height: 15
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1106,9 +1106,9 @@ TextureImporter:
       name: objects_47
       rect:
         serializedVersion: 2
-        x: 97
+        x: 95
         y: 256
-        width: 14
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1127,10 +1127,10 @@ TextureImporter:
       name: objects_48
       rect:
         serializedVersion: 2
-        x: 113
+        x: 111
         y: 256
-        width: 14
-        height: 15
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1148,10 +1148,10 @@ TextureImporter:
       name: objects_49
       rect:
         serializedVersion: 2
-        x: 128
+        x: 127
         y: 256
-        width: 15
-        height: 18
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1169,9 +1169,9 @@ TextureImporter:
       name: objects_50
       rect:
         serializedVersion: 2
-        x: 145
+        x: 143
         y: 256
-        width: 14
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1190,10 +1190,10 @@ TextureImporter:
       name: objects_51
       rect:
         serializedVersion: 2
-        x: 161
+        x: 159
         y: 256
-        width: 14
-        height: 15
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1211,10 +1211,10 @@ TextureImporter:
       name: objects_52
       rect:
         serializedVersion: 2
-        x: 179
-        y: 260
-        width: 8
-        height: 8
+        x: 175
+        y: 256
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1232,10 +1232,10 @@ TextureImporter:
       name: objects_53
       rect:
         serializedVersion: 2
-        x: 196
-        y: 260
-        width: 7
-        height: 7
+        x: 191
+        y: 256
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1253,10 +1253,10 @@ TextureImporter:
       name: objects_54
       rect:
         serializedVersion: 2
-        x: 213
-        y: 261
-        width: 20
-        height: 5
+        x: 207
+        y: 256
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1355,13 +1355,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_59
+      name: coin_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 243
-        width: 11
-        height: 11
+        x: 0
+        y: 240
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1376,13 +1376,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_60
+      name: coin_1
       rect:
         serializedVersion: 2
-        x: 18
-        y: 243
-        width: 10
-        height: 11
+        x: 16
+        y: 240
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1397,13 +1397,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_61
+      name: coin_3
       rect:
         serializedVersion: 2
-        x: 51
-        y: 243
-        width: 10
-        height: 11
+        x: 48
+        y: 240
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2804,27 +2804,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_138
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 4
-        width: 120
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 251ae6a9a0f6d9b468e0942128c80452
-      internalID: 710595692
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: objects_139
       rect:
         serializedVersion: 2
@@ -2845,6 +2824,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: objects_72
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eda2035903d28645a482b1b6fa4d025
+      internalID: -1174660727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heart_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2febd2776dfc6479d985d7118888d7
+      internalID: -1286499097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objects_41
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 4
+        width: 64
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baa0aba17eb965649b9a09ebe26e65f5
+      internalID: -78600717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -2856,21 +2898,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      objects_127: 656473126
       objects_118: -225657544
       objects_98: 871311446
-      objects_44: 422306985
       objects_45: -986584000
+      objects_134: -1929468885
       objects_78: -859955989
       objects_113: -1472381392
       objects_122: 1055599784
-      objects_134: -1929468885
+      coin_3: 583873619
       objects_116: -1384501391
       objects_92: -325823487
       pot_3: -1194652908
-      objects_41: -2063071503
+      objects_41: -78600717
       objects_89: -1568072202
       objects_109: 212429380
-      objects_128: -2129161068
       objects_3: 133020451
       objects_119: 1152910225
       objects_18: -1029863653
@@ -2879,7 +2921,7 @@ TextureImporter:
       objects_57: -1429829226
       objects_117: -442608661
       pot_0: -1253761961
-      objects_43: 705133114
+      coin_1: 906555247
       objects_132: -341302706
       objects_124: -1060648110
       objects_55: -1539399846
@@ -2895,9 +2937,12 @@ TextureImporter:
       objects_1: -1195352962
       objects_35: 1973527816
       objects_9: 1268675885
+      Heart_2: -1286499097
       objects_30: -221142692
+      coin_0: -1066878462
       objects_125: -1992028128
       objects_39: -1172871925
+      coin_2: 705133114
       objects_25: 196070723
       objects_129: -225376087
       objects_24: -1036989114
@@ -2920,14 +2965,13 @@ TextureImporter:
       objects_131: -1479531095
       objects_87: 69307473
       objects_104: 1555244727
-      objects_107: 2084859716
       objects_80: 94831160
       objects_7: 1851234269
+      objects_107: 2084859716
       objects_22: 382094998
       objects_47: -939784835
-      objects_42: -678932929
       objects_115: -147782982
-      objects_59: -1066878462
+      Heart_3: 422306985
       objects_34: 956049519
       objects_72: -1174660727
       objects_26: 219129816
@@ -2986,17 +3030,17 @@ TextureImporter:
       objects_123: 913515547
       objects_138: 710595692
       objects_103: -1028563795
-      objects_60: 906555247
+      Heart_0: -2063071503
       objects_108: 533496928
+      Heart_1: -678932929
       objects_17: 774763285
       objects_68: 1543663686
       objects_130: -1274326877
       objects_111: 1358172509
-      objects_61: 583873619
       objects_88: -81384621
-      objects_127: 656473126
       objects_4: 335185936
       objects_20: -717873727
+      objects_128: -2129161068
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

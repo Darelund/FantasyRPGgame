@@ -201,9 +201,11 @@ MonoBehaviour:
   entitieName: Baby the Log
   baseAttack: 1
   movespeed: 1.5
+  deathEffect: {fileID: 8331670661874001750, guid: c99511478afa08e45b478511abf97807, type: 3}
+  logRigidbody: {fileID: 0}
   target: {fileID: 0}
   chaseRadius: 5
-  attackRadius: 1
+  attackRadius: 0.5
   homePosition: {fileID: 0}
   anim: {fileID: 0}
 --- !u!114 &6820744375955382727
