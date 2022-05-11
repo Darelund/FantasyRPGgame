@@ -13,6 +13,7 @@ public class TreasureChest : Interactable
     public Text dialogText;
     private Animator anim;
 
+
     private void Start()
     {
         anim = GetComponent<Animator>();
