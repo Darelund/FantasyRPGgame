@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
+    [Header("Position variables")]
     // Target to follow
     public Transform target;
     // How quickly camera moves towards the target
@@ -12,9 +13,12 @@ public class CameraMovement : MonoBehaviour
     public Vector2 maxPosition;
     public Vector2 minPosition;
 
+    [Header("Animator")]
     public Animator anim;
 
-
+    [Header("Position reset")]
+    public VectorValue camMin;
+    public VectorValue camMax;
 
 
     // Start is called before the first frame update

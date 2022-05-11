@@ -13,12 +13,17 @@ public enum EntitiesState
 
 public class Entities : MonoBehaviour
 {
+    [Header("State Machine")]
     public EntitiesState currentState;
+
+    [Header("Entitie stats")]
     public float maxHealth;
-    public float health;
+    public float health;  
     public string entitieName;
     public int baseAttack;
     public float movespeed;
+
+    [Header("Death Effects")]
     public GameObject deathEffect;
     public float deathEffectTimer = 1f;
 
