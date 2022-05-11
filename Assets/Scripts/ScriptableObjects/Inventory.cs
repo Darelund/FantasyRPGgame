@@ -8,6 +8,7 @@ public class Inventory : ScriptableObject
     public Item currentItem;
     public List<Item> items = new List<Item>();
     public int numberOfKeys;
+    public int numberOfBasementKeys;
 
     public void AddItem(Item itemToAdd)
     {
@@ -15,6 +16,10 @@ public class Inventory : ScriptableObject
         if(itemToAdd.isKey)
         {
             numberOfKeys++;
+        }
+        else if(itemToAdd.isBasementKey)
+        {
+            numberOfBasementKeys++;
         }
         else
         {
