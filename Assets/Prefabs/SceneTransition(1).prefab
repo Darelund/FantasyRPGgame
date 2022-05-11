@@ -72,7 +72,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70fa6122e938bb74097cea94806ec53c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: SpawnHouse
+  sceneToLoad: startDungeon
   playerPosition: {x: 0, y: -5}
   playerStorage: {fileID: 11400000, guid: 2ed6dfa3eee8b5b4a8c6d8d51527e11e, type: 2}
   fadeInPanel: {fileID: 2453447154045647481, guid: a33702f7b7027df4e97608cb6f60e071, type: 3}
