@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public enum DoorType
@@ -8,7 +9,8 @@ public enum DoorType
     key,
     enemy,
     button,
-    basementKey
+    basementKey,
+    doorSwitch
 
 }
 
@@ -20,6 +22,13 @@ public class Door : Interactable
     public Inventory playerInventory;
     public SpriteRenderer doorSprite;
     public BoxCollider2D physicsCollider;
+
+
+    [Header("Signals and dialogs")] 
+    public GameObject dialogBox;
+    public Text dialogText;
+    public string dialog;
+    public BoxCollider2D triggerCollider;
 
     private void Start()
     {
@@ -51,7 +60,25 @@ public class Door : Interactable
                     Open();
                 }
                 
+                else
+                {
+                    if (dialogBox.activeInHierarchy)
+                    {
+                        dialogBox.SetActive(false);
+                    }
+                    else
+                    {
+                        dialogBox.SetActive(true);
+                        dialogText.text = dialog;
+                    }
+                }
 
+            }
+
+            else if (playerInRange && thisDoorType == DoorType.button)
+            {                              
+                    Open();
+                                   
             }
         }
     }
@@ -69,5 +96,17 @@ public class Door : Interactable
     public void Close()
     {
 
+    }
+
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player") && !other.isTrigger)
+        {
+            Debug.Log("Player no longer in range");
+            context.Raise();
+            playerInRange = false;
+            dialogBox.SetActive(false);
+        }
     }
 }

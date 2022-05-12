@@ -5,10 +5,14 @@ using UnityEngine;
 public class Log : Entities
 {
     public Rigidbody2D logRigidbody;
+
+    [Header("Target variables")]
     public Transform target;
     public float chaseRadius;
     public float attackRadius;
     public Transform homePosition;
+
+    [Header("Animator")]
     public Animator anim;
 
     // Start is called before the first frame update
@@ -48,7 +52,7 @@ public class Log : Entities
         }
     }
 
-    private void SetAnimFloat(Vector2 setVector)
+    public void SetAnimFloat(Vector2 setVector)
     {
         anim.SetFloat("moveX", setVector.x);
         anim.SetFloat("moveY", setVector.y);
@@ -79,7 +83,7 @@ public class Log : Entities
         }
     }
 
-    private void ChangeState(EntitiesState newState)
+    public void ChangeState(EntitiesState newState)
     {
         if(currentState != newState)
         {

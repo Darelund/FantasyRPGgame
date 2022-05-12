@@ -69,7 +69,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -620,7 +620,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_24
+      name: Rock_1
       rect:
         serializedVersion: 2
         x: 260
@@ -1943,13 +1943,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_97
+      name: Switch_up
       rect:
         serializedVersion: 2
         x: 0
         y: 160
-        width: 14
-        height: 31
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1964,13 +1964,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_98
+      name: Switch_down
       rect:
         serializedVersion: 2
         x: 16
         y: 160
-        width: 14
-        height: 31
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2900,7 +2900,6 @@ TextureImporter:
     nameFileIdTable:
       objects_127: 656473126
       objects_118: -225657544
-      objects_98: 871311446
       objects_45: -986584000
       objects_134: -1929468885
       objects_78: -859955989
@@ -2945,7 +2944,6 @@ TextureImporter:
       coin_2: 705133114
       objects_25: 196070723
       objects_129: -225376087
-      objects_24: -1036989114
       objects_96: 850224299
       objects_93: 1942444229
       objects_94: -231277320
@@ -2958,16 +2956,17 @@ TextureImporter:
       objects_73: -229908408
       objects_95: 744858742
       objects_48: -263230027
+      Switch_down: 871311446
       objects_28: 306881669
       pot_1: 1086671444
       objects_70: 509972078
       objects_106: -1201847611
       objects_131: -1479531095
-      objects_87: 69307473
       objects_104: 1555244727
+      objects_107: 2084859716
       objects_80: 94831160
       objects_7: 1851234269
-      objects_107: 2084859716
+      objects_87: 69307473
       objects_22: 382094998
       objects_47: -939784835
       objects_115: -147782982
@@ -2975,7 +2974,6 @@ TextureImporter:
       objects_34: 956049519
       objects_72: -1174660727
       objects_26: 219129816
-      objects_97: -1862221487
       objects_101: -1800297776
       objects_63: 617450287
       objects_74: -1881068339
@@ -2987,6 +2985,7 @@ TextureImporter:
       objects_31: 13233373
       objects_136: -945845143
       objects_90: -1955027154
+      Switch_up: -1862221487
       objects_120: -2023209500
       objects_110: 2081776526
       objects_56: 445007999
@@ -3037,6 +3036,7 @@ TextureImporter:
       objects_68: 1543663686
       objects_130: -1274326877
       objects_111: 1358172509
+      Rock_1: -1036989114
       objects_88: -81384621
       objects_4: 335185936
       objects_20: -717873727
