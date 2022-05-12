@@ -14105,6 +14105,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5243728359431206270, guid: da8975db7426c9f4e9be25c32b1f316b, type: 3}
+      propertyPath: cameraMax
+      value: 
+      objectReference: {fileID: 11400000, guid: 9206b9174ecabbb4b8ed86be6f6b4979, type: 2}
+    - target: {fileID: 5243728359431206270, guid: da8975db7426c9f4e9be25c32b1f316b, type: 3}
+      propertyPath: cameraMin
+      value: 
+      objectReference: {fileID: 11400000, guid: 30ea823469773ae46b6874bdeb2790bd, type: 2}
+    - target: {fileID: 5243728359431206270, guid: da8975db7426c9f4e9be25c32b1f316b, type: 3}
       propertyPath: sceneToLoad
       value: MainScene
       objectReference: {fileID: 0}
@@ -14112,6 +14120,22 @@ PrefabInstance:
       propertyPath: playerStorage
       value: 
       objectReference: {fileID: 11400000, guid: 2ed6dfa3eee8b5b4a8c6d8d51527e11e, type: 2}
+    - target: {fileID: 5243728359431206270, guid: da8975db7426c9f4e9be25c32b1f316b, type: 3}
+      propertyPath: cameraNewMax.x
+      value: 14.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243728359431206270, guid: da8975db7426c9f4e9be25c32b1f316b, type: 3}
+      propertyPath: cameraNewMax.y
+      value: 16.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243728359431206270, guid: da8975db7426c9f4e9be25c32b1f316b, type: 3}
+      propertyPath: cameraNewMin.x
+      value: -18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243728359431206270, guid: da8975db7426c9f4e9be25c32b1f316b, type: 3}
+      propertyPath: cameraNewMin.y
+      value: -18.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5243728359431206270, guid: da8975db7426c9f4e9be25c32b1f316b, type: 3}
       propertyPath: playerPosition.x
       value: -2.5
@@ -17324,7 +17348,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2025748916
 GameObject:
@@ -20853,5 +20877,5 @@ Transform:
   - {fileID: 1540178063}
   - {fileID: 994245676}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

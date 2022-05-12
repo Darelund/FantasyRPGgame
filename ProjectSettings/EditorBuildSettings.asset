@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scenes/Map(1)/Houses/Village/SecretHouse/VillageHouseSecret.unity
     guid: 008678294632d9f44bb2e3b09a5b6541
+  - enabled: 1
+    path: Assets/Scenes/Scenes/Map(1)/Dungeon/startDungeon.unity
+    guid: 3dadec615997d9345b1b1533978cdf0a
   m_configObjects: {}

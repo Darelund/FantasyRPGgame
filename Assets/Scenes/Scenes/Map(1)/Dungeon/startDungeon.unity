@@ -79150,6 +79150,9 @@ MonoBehaviour:
   smoothing: 0.5
   maxPosition: {x: 0, y: 0}
   minPosition: {x: 0, y: 0}
+  anim: {fileID: 0}
+  camMin: {fileID: 11400000, guid: e45ecd8cc2f023a48b83d8e1317a9f47, type: 2}
+  camMax: {fileID: 11400000, guid: b8d138609b9f4f94d908002889840245, type: 2}
 --- !u!4 &1739038700 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3926557344396916821, guid: f870558d547865b4eb7c076827d6e78e, type: 3}
