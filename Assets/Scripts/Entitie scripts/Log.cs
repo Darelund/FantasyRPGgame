@@ -22,7 +22,7 @@ public class Log : Entities
         logRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         target = GameObject.FindWithTag("Player").transform;
-        anim.SetBool("wakeUp", true);
+      
     }
 
     // Update is called once per frame
@@ -37,7 +37,7 @@ public class Log : Entities
         // if chase radius is more or equal to the distance between target and object with this script then run if
         if(Vector3.Distance(target.position, transform.position) <= chaseRadius && Vector3.Distance(target.position, transform.position) > attackRadius)
         {
-            if(currentState == EntitiesState.idle || currentState == EntitiesState.walk)
+            if (currentState == EntitiesState.idle || currentState == EntitiesState.walk && currentState != EntitiesState.stagger)
             {
                 Vector3 temp = Vector3.MoveTowards(transform.position, target.position, movespeed * Time.deltaTime);
 
