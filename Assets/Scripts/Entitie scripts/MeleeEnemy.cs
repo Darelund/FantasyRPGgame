@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class MeleeEnemy : Log
 {
+    public override void Start()
+    {
+        currentState = EntitiesState.idle;
+        logRigidbody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        target = GameObject.FindWithTag("Player").transform;
+    }
+
 
     public override void CheckDistance()
     {

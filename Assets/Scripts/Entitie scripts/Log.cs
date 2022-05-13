@@ -16,13 +16,13 @@ public class Log : Entities
     public Animator anim;
 
     // Start is called before the first frame update
-    void Start()
+    public virtual void Start()
     {
         currentState = EntitiesState.idle;
         logRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         target = GameObject.FindWithTag("Player").transform;
-      
+        anim.SetBool("wakeUp", true);
     }
 
     // Update is called once per frame
