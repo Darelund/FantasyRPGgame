@@ -39,6 +39,8 @@ public class RoomMove : MonoBehaviour
             cam.minPosition += minCameraChange;
             cam.maxPosition += maxCameraChange;
             other.transform.position += playerChange;
+
+           
             if(needText)
             {
                 StartCoroutine(placeNameCo());
@@ -52,4 +54,6 @@ public class RoomMove : MonoBehaviour
         yield return new WaitForSeconds(2f);
         text.SetActive(false);
     }
+
+
 }

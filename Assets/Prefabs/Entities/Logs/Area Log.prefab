@@ -211,17 +211,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  maxHealth: 0
-  health: 3
+  maxHealth: 3
+  health: 0
   entitieName: Guardian
   baseAttack: 1
   movespeed: 1.5
   deathEffect: {fileID: 8331670661874001750, guid: c99511478afa08e45b478511abf97807, type: 3}
   deathEffectTimer: 1
+  thisLoot: {fileID: 0}
+  roomSignal: {fileID: 11400000, guid: c36ad392c80d06941aaac6b0d172e9f8, type: 2}
   logRigidbody: {fileID: 0}
   target: {fileID: 0}
   chaseRadius: 5
   attackRadius: 0.5
-  homePosition: {fileID: 0}
   anim: {fileID: 0}
   boundary: {fileID: 0}

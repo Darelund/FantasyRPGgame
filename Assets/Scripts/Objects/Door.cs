@@ -76,9 +76,9 @@ public class Door : Interactable
             }
 
             else if (playerInRange && thisDoorType == DoorType.button)
-            {                              
-                    Open();
-                                   
+            {                             
+                        
+                Open();                                 
             }
         }
     }
@@ -91,6 +91,8 @@ public class Door : Interactable
         open = true;
         // Turn off the box collider
         physicsCollider.enabled = false;
+
+        triggerCollider.enabled = false;
     }
 
     public void Close()

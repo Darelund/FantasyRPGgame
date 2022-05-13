@@ -22,14 +22,27 @@ public class Entities : MonoBehaviour
     public string entitieName;
     public int baseAttack;
     public float movespeed;
+    private Vector2 homePosition;
 
     [Header("Death Effects")]
     public GameObject deathEffect;
     public float deathEffectTimer = 1f;
+    public LootTable thisLoot;
+
+    [Header("Death signal")]
+    public SignalObserver roomSignal;
 
     private void Awake()
     {
-       maxHealth = health;
+       health = maxHealth;
+       homePosition = transform.position;
+    }
+
+    private void OnEnable()
+    {
+        transform.position = homePosition;
+        health = maxHealth;
+        currentState = EntitiesState.idle;
     }
 
     private void TakeDamage(float damage)
@@ -38,9 +51,28 @@ public class Entities : MonoBehaviour
         if(health <= 0)
         {
             DeathEffect();
+            MakeLoot();
+            if(roomSignal != null)
+            {
+                roomSignal.Raise();
+            }       
             this.gameObject.SetActive(false);       
         }
     }
+
+    private void MakeLoot()
+    {
+        if(thisLoot != null)
+        {
+            PowerUp current = thisLoot.LootPowerup();
+            if(current != null)
+            {
+                Instantiate(current.gameObject, transform.position, Quaternion.identity);
+            }
+        }
+    }
+
+
 
     private void DeathEffect()
     {

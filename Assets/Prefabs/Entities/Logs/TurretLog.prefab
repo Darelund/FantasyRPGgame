@@ -211,18 +211,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 1
-  maxHealth: 0
-  health: 3
+  maxHealth: 3
+  health: 0
   entitieName: Turret_Guardian
   baseAttack: 0
   movespeed: 0
   deathEffect: {fileID: 8331670661874001750, guid: c99511478afa08e45b478511abf97807, type: 3}
   deathEffectTimer: 1
+  thisLoot: {fileID: 0}
+  roomSignal: {fileID: 11400000, guid: c36ad392c80d06941aaac6b0d172e9f8, type: 2}
   logRigidbody: {fileID: 4218537865566965267}
   target: {fileID: 0}
   chaseRadius: 5
   attackRadius: 2
-  homePosition: {fileID: 0}
   anim: {fileID: 0}
   projectile: {fileID: 270219209047813775, guid: db179228aedd6d14cb775a7463d6dd05, type: 3}
   fireDelay: 0.7

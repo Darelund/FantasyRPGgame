@@ -30,7 +30,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2550210931363982487}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -20.02, y: -8.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -196,17 +196,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  maxHealth: 0
-  health: 3
+  maxHealth: 3
+  health: 0
   entitieName: Frank the Log
   baseAttack: 1
   movespeed: 1.5
   deathEffect: {fileID: 8331670661874001750, guid: c99511478afa08e45b478511abf97807, type: 3}
+  deathEffectTimer: 1
+  thisLoot: {fileID: 0}
+  roomSignal: {fileID: 11400000, guid: c36ad392c80d06941aaac6b0d172e9f8, type: 2}
   logRigidbody: {fileID: 0}
-  target: {fileID: 8331670661874001755, guid: c99511478afa08e45b478511abf97807, type: 3}
+  target: {fileID: 0}
   chaseRadius: 5
   attackRadius: 0.5
-  homePosition: {fileID: 0}
   anim: {fileID: 0}
 --- !u!114 &4381372685169611521
 MonoBehaviour:

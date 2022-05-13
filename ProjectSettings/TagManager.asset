@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Breakable
   - Entities
+  - Room
   layers:
   - Default
   - TransparentFX
