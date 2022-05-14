@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     public Inventory playerInventory;
     public SpriteRenderer receivedItemSprite;
     public SignalObserver playerHit;
+    public GameObject projectile;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,13 +50,19 @@ public class PlayerMovement : MonoBehaviour
         change.y = Input.GetAxisRaw("Vertical");
       
         // if space and currentstate is not attack and stagger, play attack animation
-        if(Input.GetKeyDown(KeyCode.Space) && currentState != PlayerState.attack && currentState != PlayerState.stagger)
+        if(Input.GetButtonDown("attack") && currentState != PlayerState.attack && currentState != PlayerState.stagger)
         {
             StartCoroutine(AttackCo());
         }
 
+        else if (Input.GetButtonDown("Second Weapon") && currentState != PlayerState.attack && currentState != PlayerState.stagger)
+        {
+            StartCoroutine(SecondAttackCo());
+        }
+
+
         // If character is on walk or idle play animation and walk method
-       else if(currentState == PlayerState.walk || currentState == PlayerState.idle)
+        else if(currentState == PlayerState.walk || currentState == PlayerState.idle)
         {
             UpdateAnimationAndMove();
         }                   
@@ -74,6 +81,31 @@ public class PlayerMovement : MonoBehaviour
             currentState = PlayerState.walk;
         }
      
+    }
+
+    private IEnumerator SecondAttackCo()
+    {     
+        currentState = PlayerState.attack;
+        yield return null;
+        MakeArrow();       
+        yield return new WaitForSeconds(.3f);
+        if (currentState != PlayerState.interact)
+        {
+            currentState = PlayerState.walk;
+        }
+
+    }
+    private void MakeArrow()
+    {
+        Vector2 temp = new Vector2(playerAnimator.GetFloat("moveX"), playerAnimator.GetFloat("moveY"));
+        Arrow arrow = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Arrow>();
+        arrow.Setup(temp, ChooseArrowDirection());
+    }
+
+    Vector3 ChooseArrowDirection()
+    {
+        float temp = Mathf.Atan2(playerAnimator.GetFloat("moveY"), playerAnimator.GetFloat("moveX")) * Mathf.Rad2Deg;
+        return new Vector3(0, 0, temp);
     }
 
     public void RaiseItem()

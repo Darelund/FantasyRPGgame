@@ -8,6 +8,12 @@ public class PatrolLog : Log
     public int currentPoint;
     public Transform currentGoal;
 
+    public override void Start()
+    {
+        base.Start();
+    }
+
+
     public override void CheckDistance()
     {
         if (Vector3.Distance(target.position, transform.position) <= chaseRadius

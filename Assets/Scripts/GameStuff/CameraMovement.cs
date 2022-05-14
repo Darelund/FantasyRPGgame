@@ -44,7 +44,7 @@ public class CameraMovement : MonoBehaviour
             targetPosition.y = Mathf.Clamp(targetPosition.y, minPosition.y, maxPosition.y);
 
             // will move from a to b, so from transform.position to the targets position with smoothing(How quickly it moves towards targets position)
-            transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing);
+          
         }
     }
 
