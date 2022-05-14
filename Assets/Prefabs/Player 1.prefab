@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4786086610887433461}
   - component: {fileID: 4786086610887433463}
   - component: {fileID: 4786086610887433460}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReceivedItem
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
@@ -123,7 +123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5607022573795328912}
   - component: {fileID: 5607022573795328913}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ContextClues
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 5607022572734531847}
   - component: {fileID: 5607022572734531846}
   - component: {fileID: 8365004695859647415}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Player 1
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -388,6 +388,8 @@ MonoBehaviour:
   playerInventory: {fileID: 11400000, guid: 87539ec28c7cb164eadfecdeccabc0af, type: 2}
   receivedItemSprite: {fileID: 4786086610887433463}
   playerHit: {fileID: 11400000, guid: eb951a63d7fac274c8156e1bd0bf7832, type: 2}
+  reduceMagic: {fileID: 11400000, guid: 97dbd2173b8e5fd499b83e3abb6fb445, type: 2}
+  projectile: {fileID: 9012950369251657840, guid: 13a26406b979eb249b7cc94bcf823bcb, type: 3}
 --- !u!95 &8365004695859647410
 Animator:
   serializedVersion: 4
@@ -521,7 +523,7 @@ GameObject:
   - component: {fileID: 8365004696465898421}
   - component: {fileID: 8365004696465898420}
   - component: {fileID: 8365004696465898411}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: leftHitBox
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -599,7 +601,7 @@ GameObject:
   - component: {fileID: 8365004697446070800}
   - component: {fileID: 8365004697446070807}
   - component: {fileID: 8365004697446070806}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: rightHitBox
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -677,7 +679,7 @@ GameObject:
   - component: {fileID: 8365004697581525474}
   - component: {fileID: 8365004697581525473}
   - component: {fileID: 8365004697581525472}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: upHitBox
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -755,7 +757,7 @@ GameObject:
   - component: {fileID: 8365004697767211803}
   - component: {fileID: 8365004697767211802}
   - component: {fileID: 8365004697767211801}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: downHitBox
   m_TagString: Player
   m_Icon: {fileID: 0}

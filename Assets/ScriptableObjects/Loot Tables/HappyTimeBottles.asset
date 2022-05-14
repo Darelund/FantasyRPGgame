@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904f41699c99c0747b3ffde9582b83a0, type: 3}
+  m_Name: HappyTimeBottles
+  m_EditorClassIdentifier: 
+  loots:
+  - thisLoot: {fileID: 6723532022421840133, guid: c602826455fd0894496312989c2924ee, type: 3}
+    lootChance: 33
+  - thisLoot: {fileID: 5966782635126288113, guid: 4f589c66d52dd284b9f243c2efef44cc, type: 3}
+    lootChance: 33
+  - thisLoot: {fileID: 7938676609443336761, guid: 73f3df88dbab4b04994eee6def9df5fe, type: 3}
+    lootChance: 33

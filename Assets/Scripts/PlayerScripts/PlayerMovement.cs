@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     public Inventory playerInventory;
     public SpriteRenderer receivedItemSprite;
     public SignalObserver playerHit;
+    public SignalObserver reduceMagic;
     public GameObject projectile;
     // Start is called before the first frame update
     void Start()
@@ -87,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
     {     
         currentState = PlayerState.attack;
         yield return null;
-        MakeArrow();       
+        MakeFireBall();       
         yield return new WaitForSeconds(.3f);
         if (currentState != PlayerState.interact)
         {
@@ -95,14 +96,18 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
-    private void MakeArrow()
+    private void MakeFireBall()
     {
-        Vector2 temp = new Vector2(playerAnimator.GetFloat("moveX"), playerAnimator.GetFloat("moveY"));
-        Arrow arrow = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Arrow>();
-        arrow.Setup(temp, ChooseArrowDirection());
+        if(playerInventory.currentMagic > 0)
+        {
+            Vector2 temp = new Vector2(playerAnimator.GetFloat("moveX"), playerAnimator.GetFloat("moveY"));
+            FireBall fireball = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<FireBall>();
+            fireball.Setup(temp, ChooseFireBallDirection());
+            reduceMagic.Raise();
+        }     
     }
 
-    Vector3 ChooseArrowDirection()
+    Vector3 ChooseFireBallDirection()
     {
         float temp = Mathf.Atan2(playerAnimator.GetFloat("moveY"), playerAnimator.GetFloat("moveX")) * Mathf.Rad2Deg;
         return new Vector3(0, 0, temp);

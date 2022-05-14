@@ -7,15 +7,27 @@ public class Arrow : MonoBehaviour
     public float speed;
     public Rigidbody2D arrowRigidbody;
 
-
+    [Header("Lifetime")]
+    public float lifetime;
+    private float lifetimeSeconds;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        lifetimeSeconds = lifetime;
     }
 
-   public void Setup(Vector2 velocity, Vector3 direction)
+    void Update()
+    {
+        lifetimeSeconds -= Time.deltaTime;
+        if (lifetimeSeconds <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void Setup(Vector2 velocity, Vector3 direction)
     {
         arrowRigidbody.velocity = velocity.normalized * speed;
         transform.rotation = Quaternion.Euler(direction);
@@ -24,7 +36,8 @@ public class Arrow : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("Entities"))
-
-        Destroy(this.gameObject);
+        {
+            Destroy(this.gameObject);
+        }    
     }
 }

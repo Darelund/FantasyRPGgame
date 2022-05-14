@@ -10,6 +10,8 @@ public class Inventory : ScriptableObject
     public int numberOfKeys;
     public int numberOfBasementKeys;
     public int coins;
+    public float maxMagic = 100;
+    public float currentMagic;
 
     public void AddItem(Item itemToAdd)
     {

@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scenes/Map(1)/Castle/Castle.unity
     guid: 1b621a458d7b67345a24975b8e3309a0
+  - enabled: 1
+    path: Assets/Scenes/Scenes/Map(1)/Village/Village houses/DrugStore.unity
+    guid: 07f999fd1c0bd4f458f71892288f9339
   m_configObjects: {}

@@ -10,10 +10,17 @@ public class PatrolLog : Log
 
     public override void Start()
     {
-        base.Start();
+        currentState = EntitiesState.walk;
+        logRigidbody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        target = GameObject.FindWithTag("Player").transform;
+        anim.SetBool("wakeUp", true);
     }
 
-
+    public override void OnEnable()
+    {
+        anim.SetBool("wakeUp", true);
+    }
     public override void CheckDistance()
     {
         if (Vector3.Distance(target.position, transform.position) <= chaseRadius
@@ -44,6 +51,7 @@ public class PatrolLog : Log
             }
         }
     }
+
 
     private void ChangeGoal()
     {

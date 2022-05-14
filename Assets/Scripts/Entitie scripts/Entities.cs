@@ -28,6 +28,7 @@ public class Entities : MonoBehaviour
     public GameObject deathEffect;
     public float deathEffectTimer = 1f;
     public LootTable thisLoot;
+    
 
     [Header("Death signal")]
     public SignalObserver roomSignal;
@@ -38,7 +39,7 @@ public class Entities : MonoBehaviour
        homePosition = transform.position;
     }
 
-    private void OnEnable()
+    public virtual void OnEnable()
     {
         transform.position = homePosition;
         health = maxHealth;

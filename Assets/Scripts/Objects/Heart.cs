@@ -25,7 +25,18 @@ public class Heart : PowerUp
         if(other.CompareTag("Player") && !other.isTrigger)
         {
             playerHealth.RunTimeValue += amountToIncrease;
-            if(playerHealth.initialValue > heartContainers.RunTimeValue * 4f)
+            if (playerHealth.RunTimeValue > playerHealth.initialValue)
+            {
+                playerHealth.RunTimeValue = playerHealth.initialValue;
+            }
+            
+            
+
+
+            
+
+
+            if (playerHealth.initialValue > heartContainers.RunTimeValue * 4f)
             {
                 playerHealth.initialValue = heartContainers.RunTimeValue * 4f;
             }
