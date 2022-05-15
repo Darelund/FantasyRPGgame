@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5725334371095829712}
   - component: {fileID: 4083873016861219960}
   - component: {fileID: 8143115940170013921}
+  - component: {fileID: -7819983782666294087}
   m_Layer: 10
   m_Name: FireBall
   m_TagString: Untagged
@@ -167,3 +168,23 @@ MonoBehaviour:
   thrust: 2.5
   knockTime: 0.4
   damage: 1
+--- !u!95 &-7819983782666294087
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9012950369251657840}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d05d6be0b8b1df8409a5eee319a0ab94, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

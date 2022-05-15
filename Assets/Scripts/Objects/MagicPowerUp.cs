@@ -15,12 +15,18 @@ public class MagicPowerUp : PowerUp
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        
-            if (other.gameObject.CompareTag("Player"))
-            {
+
+        if (other.gameObject.CompareTag("Player"))
+        {
+
             playerInventory.currentMagic += magicValue;
-                powerupSignal.Raise();
-                Destroy(this.gameObject);
-            }         
+            if (playerInventory.currentMagic > playerInventory.maxMagic)
+            {
+                playerInventory.currentMagic = playerInventory.maxMagic;
+            }
+
+            powerupSignal.Raise();
+            Destroy(this.gameObject);
+        }
     }
 }

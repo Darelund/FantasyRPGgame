@@ -31,6 +31,8 @@ public class HeartManager : MonoBehaviour
 
     public void updateHearts()
     {
+        InitHearts();
+
         float tempHealth = playerCurrentHealth.RunTimeValue / 4;
         for (int i = 0; i < heartContainers.RunTimeValue; i++)
         {
