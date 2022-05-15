@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scenes/Map(1)/Village/Village houses/DrugStore.unity
     guid: 07f999fd1c0bd4f458f71892288f9339
+  - enabled: 1
+    path: Assets/Scenes/Scenes/Map(1)/Spawn/Spawn/OpeningCutscene.unity
+    guid: 864702e48b04f8140a8dbabecc4ad1ff
   m_configObjects: {}

@@ -390,6 +390,7 @@ MonoBehaviour:
   playerHit: {fileID: 11400000, guid: eb951a63d7fac274c8156e1bd0bf7832, type: 2}
   reduceMagic: {fileID: 11400000, guid: 97dbd2173b8e5fd499b83e3abb6fb445, type: 2}
   projectile: {fileID: 9012950369251657840, guid: 13a26406b979eb249b7cc94bcf823bcb, type: 3}
+  homework: {fileID: 11400000, guid: 6976e58ee33c1644cb7b8d1b848fe4a5, type: 2}
 --- !u!95 &8365004695859647410
 Animator:
   serializedVersion: 4

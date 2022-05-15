@@ -19,7 +19,7 @@ public class MainMenu : MonoBehaviour
 
     public void NewGame()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("OpeningCutscene");
     }
 
     // Need to be added
