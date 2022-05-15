@@ -7,18 +7,21 @@ public class FireBall : MonoBehaviour
     [Header("Stats")]
     public float speed;
     public Rigidbody2D arrowRigidbody;
+    public float magicCost;
 
     [Header("Lifetime")]
     public float lifetime;
     private float lifetimeSeconds;
 
-    [Header("Lifetime")]
+    [Header("Animator")]
+    // Under work
     public Animator fireballAnim;
 
     // Start is called before the first frame update
     void Start()
     {
         lifetimeSeconds = lifetime;
+        fireballAnim = GetComponent<Animator>();
     }
 
     void Update()

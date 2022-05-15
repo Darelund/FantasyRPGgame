@@ -25,7 +25,12 @@ public class PlayerMovement : MonoBehaviour
     public SpriteRenderer receivedItemSprite;
     public SignalObserver playerHit;
     public SignalObserver reduceMagic;
+   
+
+    [Header("Projectiles")]
     public GameObject projectile;
+    public Item homework;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -58,7 +63,11 @@ public class PlayerMovement : MonoBehaviour
 
         else if (Input.GetButtonDown("Second Weapon") && currentState != PlayerState.attack && currentState != PlayerState.stagger)
         {
-            StartCoroutine(SecondAttackCo());
+            if(playerInventory.CheckForItem(homework))
+            {
+                StartCoroutine(SecondAttackCo());
+            }
+           
         }
 
 
@@ -88,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
     {     
         currentState = PlayerState.attack;
         yield return null;
-        MakeFireBall();       
+        MagicProjectile();
         yield return new WaitForSeconds(.3f);
         if (currentState != PlayerState.interact)
         {
@@ -96,18 +105,19 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
-    private void MakeFireBall()
+    private void MagicProjectile()
     {
         if(playerInventory.currentMagic > 0)
         {
             Vector2 temp = new Vector2(playerAnimator.GetFloat("moveX"), playerAnimator.GetFloat("moveY"));
-            FireBall fireball = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<FireBall>();
-            fireball.Setup(temp, ChooseFireBallDirection());
+            FireBall magicProjectileLaunch = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<FireBall>();
+            magicProjectileLaunch.Setup(temp, ChoosemAGICProjectileDirection());
+            playerInventory.ReduceMagic(magicProjectileLaunch.magicCost);
             reduceMagic.Raise();
         }     
     }
 
-    Vector3 ChooseFireBallDirection()
+    Vector3 ChoosemAGICProjectileDirection()
     {
         float temp = Mathf.Atan2(playerAnimator.GetFloat("moveY"), playerAnimator.GetFloat("moveX")) * Mathf.Rad2Deg;
         return new Vector3(0, 0, temp);
