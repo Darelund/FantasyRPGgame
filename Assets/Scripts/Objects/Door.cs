@@ -22,7 +22,7 @@ public class Door : Interactable
     public Inventory playerInventory;
     public SpriteRenderer doorSprite;
     public BoxCollider2D physicsCollider;
-
+    
 
     [Header("Signals and dialogs")] 
     public GameObject dialogBox;
