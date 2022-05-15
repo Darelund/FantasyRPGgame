@@ -2809,7 +2809,7 @@ TextureImporter:
         serializedVersion: 2
         x: 144
         y: 0
-        width: 96
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2898,6 +2898,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      objects_4: 335185936
       objects_118: -225657544
       objects_45: -986584000
       objects_134: -1929468885
@@ -2911,7 +2912,6 @@ TextureImporter:
       objects_41: -78600717
       objects_89: -1568072202
       objects_109: 212429380
-      objects_20: -717873727
       objects_3: 133020451
       objects_119: 1152910225
       objects_18: -1029863653
@@ -2964,9 +2964,9 @@ TextureImporter:
       objects_131: -1479531095
       objects_104: 1555244727
       objects_107: 2084859716
-      objects_87: 69307473
       objects_7: 1851234269
       objects_80: 94831160
+      objects_87: 69307473
       objects_22: 382094998
       objects_47: -939784835
       objects_115: -147782982
@@ -3038,9 +3038,9 @@ TextureImporter:
       objects_111: 1358172509
       Rock_1: -1036989114
       objects_88: -81384621
-      objects_4: 335185936
       objects_127: 656473126
       objects_128: -2129161068
+      objects_20: -717873727
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

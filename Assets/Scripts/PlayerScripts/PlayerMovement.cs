@@ -150,6 +150,8 @@ public class PlayerMovement : MonoBehaviour
         if (change != Vector3.zero)
         {
             MoveCharacter();
+            change.x = Mathf.Round(change.x);
+            change.y = Mathf.Round(change.y);
             playerAnimator.SetFloat("moveX", change.x);
             playerAnimator.SetFloat("moveY", change.y);
             playerAnimator.SetBool("moving", true);
