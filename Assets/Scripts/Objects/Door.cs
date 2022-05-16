@@ -10,7 +10,9 @@ public enum DoorType
     enemy,
     button,
     basementKey,
-    doorSwitch
+    doorSwitch,
+    seaKey,
+    castleKey
 
 }
 
@@ -42,7 +44,7 @@ public class Door : Interactable
     {
         if(Input.GetKeyDown(KeyCode.E))
         {
-            if(playerInRange && thisDoorType == DoorType.key)
+            if(playerInRange && thisDoorType == DoorType.key || thisDoorType == DoorType.button || thisDoorType == DoorType.doorSwitch || thisDoorType == DoorType.basementKey || thisDoorType == DoorType.enemy || thisDoorType == DoorType.castleKey || thisDoorType == DoorType.seaKey)
             {
                 // Does the player have a key?
                 if(playerInventory.numberOfKeys > 0)
@@ -75,11 +77,7 @@ public class Door : Interactable
 
             }
 
-            else if (playerInRange && thisDoorType == DoorType.button)
-            {                             
-                        
-                Open();                                 
-            }
+            
         }
     }
 
