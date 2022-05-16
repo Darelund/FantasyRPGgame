@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ed6de41c135ba344a7372c764b12aea, type: 3}
   m_Name: SeaKey
   m_EditorClassIdentifier: 
-  itemSprite: {fileID: 0}
-  itemDescription: 
+  itemSprite: {fileID: 21300000, guid: 9f8978811bef33a4dbe12e97eace0965, type: 3}
+  itemDescription: Sea Key
   isKey: 0
   isBasementKey: 0
   isSeaKey: 1

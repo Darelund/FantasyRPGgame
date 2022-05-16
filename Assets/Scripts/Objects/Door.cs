@@ -11,8 +11,8 @@ public enum DoorType
     button,
     basementKey,
     doorSwitch,
-    seaKey,
-    castleKey
+    castleKey,
+    seaKey
 
 }
 
@@ -44,7 +44,7 @@ public class Door : Interactable
     {
         if(Input.GetKeyDown(KeyCode.E))
         {
-            if(playerInRange && thisDoorType == DoorType.key || thisDoorType == DoorType.button || thisDoorType == DoorType.doorSwitch || thisDoorType == DoorType.basementKey || thisDoorType == DoorType.enemy || thisDoorType == DoorType.castleKey || thisDoorType == DoorType.seaKey)
+            if(playerInRange && thisDoorType == DoorType.key)
             {
                 // Does the player have a key?
                 if(playerInventory.numberOfKeys > 0)
@@ -54,13 +54,7 @@ public class Door : Interactable
                     // If so, call the open method
                     Open();
                 }
-               else if (playerInventory.numberOfBasementKeys > 0)
-                {
-                    // Remove a player key
-                    playerInventory.numberOfBasementKeys--;
-                    // If so, call the open method
-                    Open();
-                }
+              
                 
                 else
                 {
@@ -77,7 +71,113 @@ public class Door : Interactable
 
             }
 
-            
+            else if (playerInRange && thisDoorType == DoorType.button)
+            {
+                
+                Open();                                 
+            }
+
+            else if (playerInRange && thisDoorType == DoorType.castleKey)
+            {
+                if (playerInventory.numberOfCastleKeys > 0)
+                {
+                    // Remove a player key
+                    playerInventory.numberOfCastleKeys--;
+                    // If so, call the open method
+                    Open();
+                }
+
+                else
+                {
+                    if (dialogBox.activeInHierarchy)
+                    {
+                        dialogBox.SetActive(false);
+                    }
+                    else
+                    {
+                        dialogBox.SetActive(true);
+                        dialogText.text = dialog;
+                    }
+                }
+            }
+
+            else if (playerInRange && thisDoorType == DoorType.seaKey)
+            {
+                if (playerInventory.numberOfSeaKeys > 0)
+                {
+                    playerInventory.numberOfSeaKeys--;
+                    Open();
+                }
+
+                else
+                {
+                    if (dialogBox.activeInHierarchy)
+                    {
+                        dialogBox.SetActive(false);
+                    }
+                    else
+                    {
+                        dialogBox.SetActive(true);
+                        dialogText.text = dialog;
+                    }
+                }
+
+            }
+
+            else if (playerInRange && thisDoorType == DoorType.basementKey)
+            {
+
+                 if (playerInventory.numberOfBasementKeys > 0)
+                {
+                    // Remove a player key
+                    playerInventory.numberOfBasementKeys--;
+                    // If so, call the open method
+                    Open();
+                }
+
+                else
+                {
+                    if (dialogBox.activeInHierarchy)
+                    {
+                        dialogBox.SetActive(false);
+                    }
+                    else
+                    {
+                        dialogBox.SetActive(true);
+                        dialogText.text = dialog;
+                    }
+                }
+            }
+
+            else if (playerInRange && thisDoorType == DoorType.doorSwitch)
+            {                          
+                
+                    if (dialogBox.activeInHierarchy)
+                    {
+                        dialogBox.SetActive(false);
+                    }
+                    else
+                    {
+                        dialogBox.SetActive(true);
+                        dialogText.text = dialog;
+                    }
+                
+            }
+            else if (playerInRange && thisDoorType == DoorType.enemy)
+            {             
+                
+                    if (dialogBox.activeInHierarchy)
+                    {
+                        dialogBox.SetActive(false);
+                    }
+                    else
+                    {
+                        dialogBox.SetActive(true);
+                        dialogText.text = dialog;
+                    }
+                
+            }
+
         }
     }
 
