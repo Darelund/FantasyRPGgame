@@ -9,6 +9,8 @@ public class Inventory : ScriptableObject
     public List<Item> items = new List<Item>();
     public int numberOfKeys;
     public int numberOfBasementKeys;
+    public int numberOfSeaKeys;
+    public int numberOfCastleKeys;
     public int coins;
     public float maxMagic = 100;
     public float currentMagic;
@@ -43,6 +45,17 @@ public class Inventory : ScriptableObject
         {
             numberOfBasementKeys++;
         }
+
+        else if (itemToAdd.isSeaKey)
+        {
+            numberOfSeaKeys++;
+        }
+
+        else if (itemToAdd.isCastleKey)
+        {
+            numberOfCastleKeys++;
+        }
+
         else
         {
             if(!items.Contains(itemToAdd))

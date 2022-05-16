@@ -9,4 +9,6 @@ public class Item : ScriptableObject
     public string itemDescription;
     public bool isKey;
     public bool isBasementKey;
+    public bool isSeaKey;
+    public bool isCastleKey;
 }
