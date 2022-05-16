@@ -13020,7 +13020,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Where did the beds go?
+  m_Text: A chest?
 --- !u!222 &941129403
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14351,7 +14351,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5967217312119918034, guid: da8975db7426c9f4e9be25c32b1f316b, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5967217312119918034, guid: da8975db7426c9f4e9be25c32b1f316b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14418,7 +14418,19 @@ PrefabInstance:
     - target: {fileID: 4474227637807186758, guid: 6aef20325dce0be41890f897c3eb8aed, type: 3}
       propertyPath: contents
       value: 
-      objectReference: {fileID: 11400000, guid: e679fe582bf923a46a260540bf4d7d44, type: 2}
+      objectReference: {fileID: 11400000, guid: a06ebb863599ca64282fc97300716da8, type: 2}
+    - target: {fileID: 4474227637807186758, guid: 6aef20325dce0be41890f897c3eb8aed, type: 3}
+      propertyPath: dialogBox
+      value: 
+      objectReference: {fileID: 3442259522122659990}
+    - target: {fileID: 4474227637807186758, guid: 6aef20325dce0be41890f897c3eb8aed, type: 3}
+      propertyPath: dialogText
+      value: 
+      objectReference: {fileID: 3442259523067612833}
+    - target: {fileID: 4474227637807186758, guid: 6aef20325dce0be41890f897c3eb8aed, type: 3}
+      propertyPath: storedOpen
+      value: 
+      objectReference: {fileID: 11400000, guid: 4aa4b5f56ccc09f4ba76b794b5c8b9b9, type: 2}
     - target: {fileID: 4474227637807186759, guid: 6aef20325dce0be41890f897c3eb8aed, type: 3}
       propertyPath: m_Name
       value: Common_Chest
@@ -21206,7 +21218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerAnimator: {fileID: 1236609431}
   playerAnim: {fileID: 9100000, guid: 60a9fccfb7cff7b488c9d30d720266f7, type: 2}
-  director: {fileID: 0}
+  director: {fileID: 2123068071}
 --- !u!320 &2123068071
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -21228,6 +21240,8 @@ PlayableDirector:
     value: {fileID: 1236609431}
   - key: {fileID: 3915329759839940108, guid: 476dfc5aaadd89147b0b0f8014962113, type: 2}
     value: {fileID: 3442259522122659990}
+  - key: {fileID: 7197711375059303484, guid: 476dfc5aaadd89147b0b0f8014962113, type: 2}
+    value: {fileID: 1895846023}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &2123068072
