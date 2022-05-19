@@ -25,11 +25,19 @@ public class PlayerMovement : MonoBehaviour
     public SpriteRenderer receivedItemSprite;
     public SignalObserver playerHit;
     public SignalObserver reduceMagic;
-   
+
+    [Header("IFrame stuff")]
+    public Color flashColor;
+    public Color regularColor;
+    public float flashDuration;
+    public int numberOfFlashes;
+    public Collider2D triggerCollider;
+    public SpriteRenderer framesSprite;
 
     [Header("Projectiles")]
     public GameObject projectile;
     public Item homework;
+
 
     // Start is called before the first frame update
     void Start()
@@ -188,10 +196,27 @@ public class PlayerMovement : MonoBehaviour
         playerHit.Raise();
         if (playerRigidbody != null)
         {
+            StartCoroutine(FlashCo());
             yield return new WaitForSeconds(knockTime);
             playerRigidbody.velocity = Vector2.zero;
             currentState = PlayerState.idle;
             playerRigidbody.velocity = Vector2.zero;
         }
     }
+
+    private IEnumerator FlashCo()
+    {
+        int temp = 0;
+        triggerCollider.enabled = false;
+        while(temp < numberOfFlashes)
+        {
+            framesSprite.color = flashColor;
+            yield return new WaitForSeconds(flashDuration);
+            framesSprite.color = regularColor;
+            yield return new WaitForSeconds(flashDuration);
+            temp++;
+        }
+        triggerCollider.enabled = true;
+    }
+
 }
