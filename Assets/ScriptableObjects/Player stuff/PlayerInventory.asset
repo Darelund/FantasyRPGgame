@@ -19,7 +19,7 @@ MonoBehaviour:
   numberOfKeys: 0
   numberOfBasementKeys: 0
   numberOfSeaKeys: 0
-  numberOfCastleKeys: 0
+  numberOfCastleKeys: 1
   coins: 0
   maxMagic: 100
-  currentMagic: 100
+  currentMagic: 0
