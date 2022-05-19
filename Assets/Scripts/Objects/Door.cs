@@ -12,7 +12,8 @@ public enum DoorType
     basementKey,
     doorSwitch,
     castleKey,
-    seaKey
+    seaKey,
+    dungeonKey
 
 }
 
@@ -131,6 +132,30 @@ public class Door : Interactable
                 {
                     // Remove a player key
                     playerInventory.numberOfBasementKeys--;
+                    // If so, call the open method
+                    Open();
+                }
+
+                else
+                {
+                    if (dialogBox.activeInHierarchy)
+                    {
+                        dialogBox.SetActive(false);
+                    }
+                    else
+                    {
+                        dialogBox.SetActive(true);
+                        dialogText.text = dialog;
+                    }
+                }
+            }
+            else if (playerInRange && thisDoorType == DoorType.dungeonKey)
+            {
+
+                if (playerInventory.numberOfDungeonKeys > 0)
+                {
+                    // Remove a player key
+                    playerInventory.numberOfDungeonKeys--;
                     // If so, call the open method
                     Open();
                 }

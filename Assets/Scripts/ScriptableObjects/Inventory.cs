@@ -11,6 +11,7 @@ public class Inventory : ScriptableObject
     public int numberOfBasementKeys;
     public int numberOfSeaKeys;
     public int numberOfCastleKeys;
+    public int numberOfDungeonKeys;
     public int coins;
     public float maxMagic = 100;
     public float currentMagic;
@@ -54,6 +55,10 @@ public class Inventory : ScriptableObject
         else if (itemToAdd.isCastleKey)
         {
             numberOfCastleKeys++;
+        }
+        else if (itemToAdd.isDungeonKey)
+        {
+            numberOfDungeonKeys++;
         }
 
         else

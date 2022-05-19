@@ -11,4 +11,5 @@ public class Item : ScriptableObject
     public bool isBasementKey;
     public bool isSeaKey;
     public bool isCastleKey;
+    public bool isDungeonKey;
 }
