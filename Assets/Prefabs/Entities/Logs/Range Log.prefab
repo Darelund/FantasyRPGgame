@@ -203,7 +203,7 @@ MonoBehaviour:
   movespeed: 1.5
   deathEffect: {fileID: 8331670661874001750, guid: c99511478afa08e45b478511abf97807, type: 3}
   deathEffectTimer: 1
-  thisLoot: {fileID: 0}
+  thisLoot: {fileID: 11400000, guid: 3cb517e29a451654f96f8518d654472e, type: 2}
   roomSignal: {fileID: 11400000, guid: c36ad392c80d06941aaac6b0d172e9f8, type: 2}
   logRigidbody: {fileID: 0}
   target: {fileID: 0}
