@@ -5,8 +5,9 @@ using UnityEngine.Events;
 
 public class SignalListener : MonoBehaviour
 {
-    public SignalObserver signal;
     public UnityEvent signalEvent;
+    [SerializeField] public SignalObserver signal;
+   
 
     public void OnSignalRaised()
     {
