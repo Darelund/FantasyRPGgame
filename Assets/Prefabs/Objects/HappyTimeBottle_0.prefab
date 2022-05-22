@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 107431002929701175}
   - component: {fileID: 1611999221713688815}
   - component: {fileID: 6723532022421840133}
+  - component: {fileID: 5105684985118293352}
   m_Layer: 0
   m_Name: HappyTimeBottle_0
   m_TagString: Untagged
@@ -127,3 +128,17 @@ MonoBehaviour:
   powerupSignal: {fileID: 11400000, guid: f27f7d5bf67541e4cb217ba97cde5f80, type: 2}
   playerInventory: {fileID: 11400000, guid: 87539ec28c7cb164eadfecdeccabc0af, type: 2}
   magicValue: 10
+--- !u!114 &5105684985118293352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107431002929701174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a75d9e7655b8e84fa6a50685b4cfedd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInventory: {fileID: 11400000, guid: 6cc4166ffd7ae5d40af8850487f551a3, type: 2}
+  thisItem: {fileID: 11400000, guid: 54b7ae7de9c017940a45095b42af9ad2, type: 2}

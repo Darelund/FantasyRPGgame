@@ -9,11 +9,18 @@ public class PauseManager : MonoBehaviour
     public GameObject pausePanel;
     public string mainMenu;
 
+    [Header("Activate Inventory")]
+    private bool isActive;
+    public GameObject inventoryActivePanel;
+
+
+    
 
     // Start is called before the first frame update
     void Start()
     {
         isPaused = false;
+        isActive = false;
     }
 
     // Update is called once per frame
@@ -23,6 +30,10 @@ public class PauseManager : MonoBehaviour
         {
             ChangePause();
        
+        }
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            ChangeInventory();
         }
     }
 
@@ -38,6 +49,20 @@ public class PauseManager : MonoBehaviour
         {
             pausePanel.SetActive(false);
             Time.timeScale = 1f;
+        }
+    }
+    public void ChangeInventory()
+    {
+        isActive = !isActive;
+        if (isActive)
+        {
+            inventoryActivePanel.SetActive(true);
+           
+        }
+        else
+        {
+            inventoryActivePanel.SetActive(false);
+           
         }
     }
 

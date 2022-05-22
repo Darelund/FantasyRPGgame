@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 608815271054771003}
   - component: {fileID: 608815271054771004}
   - component: {fileID: 3129146561842175294}
-  - component: {fileID: 7938676609443336761}
+  - component: {fileID: 8983866512830681083}
+  - component: {fileID: 1028134376407189197}
   m_Layer: 0
   m_Name: HappyTimeBottle_2
   m_TagString: Untagged
@@ -112,7 +113,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9375, y: 1.3125}
   m_EdgeRadius: 0
---- !u!114 &7938676609443336761
+--- !u!114 &8983866512830681083
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,3 +128,17 @@ MonoBehaviour:
   powerupSignal: {fileID: 11400000, guid: f27f7d5bf67541e4cb217ba97cde5f80, type: 2}
   playerInventory: {fileID: 11400000, guid: 87539ec28c7cb164eadfecdeccabc0af, type: 2}
   magicValue: 50
+--- !u!114 &1028134376407189197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608815271054771005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a75d9e7655b8e84fa6a50685b4cfedd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInventory: {fileID: 11400000, guid: 6cc4166ffd7ae5d40af8850487f551a3, type: 2}
+  thisItem: {fileID: 11400000, guid: fc6d0de5c88cb0f42931186133214d11, type: 2}
