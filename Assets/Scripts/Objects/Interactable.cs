@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    public SignalObserver context;
-    public bool playerInRange;
+    [SerializeField] public bool playerInRange;
+    [SerializeField] public string otherTag;
+    [SerializeField] public SignalObserver context;
+
     // Start is called before the first frame update
     void Start()
     {
