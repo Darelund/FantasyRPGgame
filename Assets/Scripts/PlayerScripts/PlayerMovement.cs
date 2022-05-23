@@ -11,7 +11,7 @@ public enum PlayerState
     idle
 }
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, ISavable
 {
     public PlayerState currentState;
     public float speed = 5f;
@@ -83,7 +83,14 @@ public class PlayerMovement : MonoBehaviour
         else if(currentState == PlayerState.walk || currentState == PlayerState.idle)
         {
             UpdateAnimationAndMove();
-           
+            if (Input.GetKeyDown(KeyCode.O))
+            {
+                SavingSystem.i.Save("saveSlot1");
+            }
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                SavingSystem.i.Load("saveSlot1");
+            }
         }                   
 
        
@@ -225,6 +232,15 @@ public class PlayerMovement : MonoBehaviour
         triggerCollider.enabled = true;
     }
 
-   
+    public object CaptureState()
+    {
+        float[] position = new float[] { transform.position.x, transform.position.y };
+        return position;
+    }
 
+    public void RestoreState(object state)
+    {
+       var position = (float[])state;
+        transform.position = new Vector3(position[0], position[1]);
+    }
 }
