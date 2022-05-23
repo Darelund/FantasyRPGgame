@@ -8,7 +8,7 @@ public class ResponseObject : MonoBehaviour
     [SerializeField] private TextMeshProUGUI myText;
     private int choiceValue;
 
-    void Setup(string newDialog, int myChoice)
+    public void Setup(string newDialog, int myChoice)
     {
         myText.text = newDialog;
         choiceValue = myChoice;

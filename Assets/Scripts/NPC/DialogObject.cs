@@ -7,7 +7,7 @@ public class DialogObject : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI myText;
 
-    void Setup(string newDialog)
+    public void Setup(string newDialog)
     {
         myText.text = newDialog;
     }

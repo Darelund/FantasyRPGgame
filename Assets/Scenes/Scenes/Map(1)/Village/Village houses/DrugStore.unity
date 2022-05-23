@@ -201,6 +201,8 @@ MonoBehaviour:
   dialogPrefab: {fileID: 6486163078305072417, guid: 5bc1c7e4e646c82468534813e4d0f334, type: 3}
   choicePrefab: {fileID: 5288272327881857989, guid: 28eedfe70b7a93940b3057d4d85c5ef2, type: 3}
   dialogValue: {fileID: 11400000, guid: 68f0c53feaf856d4986926a53ef9f266, type: 2}
+  dialogHolder: {fileID: 1452241516}
+  choiceHolder: {fileID: 1445672776}
 --- !u!1001 &66298472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6122,7 +6124,6 @@ GameObject:
   - component: {fileID: 1064579314}
   - component: {fileID: 1064579316}
   - component: {fileID: 1064579315}
-  - component: {fileID: 1064579317}
   m_Layer: 0
   m_Name: DialogZone
   m_TagString: Untagged
@@ -6189,24 +6190,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1438898, y: 1.9328098}
   m_EdgeRadius: 0
---- !u!114 &1064579317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1064579313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6adf8d603b996047bbde7328a706766, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerInRange: 0
-  otherTag: 
-  context: {fileID: 0}
-  dialogValue: {fileID: 0}
-  myDialog: {fileID: 0}
-  branchingDialogNotification: {fileID: 0}
 --- !u!1 &1067470640
 GameObject:
   m_ObjectHideFlags: 0
@@ -6858,6 +6841,16 @@ PrefabInstance:
 --- !u!224 &1369151168 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7604498536205017019, guid: f35683ed45cfa954399951463df16000, type: 3}
+  m_PrefabInstance: {fileID: 1369151167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1445672776 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 868892316, guid: f35683ed45cfa954399951463df16000, type: 3}
+  m_PrefabInstance: {fileID: 1369151167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1452241516 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1210902981, guid: f35683ed45cfa954399951463df16000, type: 3}
   m_PrefabInstance: {fileID: 1369151167}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1457503292
