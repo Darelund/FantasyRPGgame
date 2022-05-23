@@ -9910,7 +9910,7 @@ MonoBehaviour:
   otherTag: Player
   context: {fileID: 11400000, guid: f0f44ba6943ad6d4d97c661b520e45d7, type: 2}
   dialogValue: {fileID: 11400000, guid: 68f0c53feaf856d4986926a53ef9f266, type: 2}
-  myDialog: {fileID: 4900000, guid: 6cf48bb6d89824cc69e35b43f9a1aca6, type: 3}
+  myDialog: {fileID: 4900000, guid: 5c7ea2f2e89808a408b10bd5ad4b5a8e, type: 3}
   branchingDialogNotification: {fileID: 11400000, guid: d6cf344889226424880cefe0d824a47c, type: 2}
 --- !u!4 &2124792600 stripped
 Transform:
@@ -9922,63 +9922,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2187783092420174073, guid: 4f589c66d52dd284b9f243c2efef44cc, type: 3}
   m_PrefabInstance: {fileID: 704045800}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &4457304306932532957
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4457304307599230626, guid: 48b235714334e254eaacc0a4c409d2b7, type: 3}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457304307599230626, guid: 48b235714334e254eaacc0a4c409d2b7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.081020474
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457304307599230626, guid: 48b235714334e254eaacc0a4c409d2b7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 9.4170065
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457304307599230626, guid: 48b235714334e254eaacc0a4c409d2b7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457304307599230626, guid: 48b235714334e254eaacc0a4c409d2b7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457304307599230626, guid: 48b235714334e254eaacc0a4c409d2b7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457304307599230626, guid: 48b235714334e254eaacc0a4c409d2b7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457304307599230626, guid: 48b235714334e254eaacc0a4c409d2b7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457304307599230626, guid: 48b235714334e254eaacc0a4c409d2b7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457304307599230626, guid: 48b235714334e254eaacc0a4c409d2b7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457304307599230626, guid: 48b235714334e254eaacc0a4c409d2b7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457304307599230630, guid: 48b235714334e254eaacc0a4c409d2b7, type: 3}
-      propertyPath: m_Name
-      value: DialogNPC
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 48b235714334e254eaacc0a4c409d2b7, type: 3}
 --- !u!1001 &6764076543698194967
 PrefabInstance:
   m_ObjectHideFlags: 0
