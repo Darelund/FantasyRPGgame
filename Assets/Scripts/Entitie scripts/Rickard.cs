@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Rickard : Log
 {
-    private Vector3 offset;
+   
     public override void Start()
     {
         currentState = EntitiesState.idle;
@@ -34,7 +34,7 @@ public class Rickard : Log
             if (currentState == EntitiesState.walk && currentState != EntitiesState.stagger)
             {
                 StartCoroutine(AttackCo());
-                
+               
             }
 
         }
@@ -44,7 +44,7 @@ public class Rickard : Log
     {
         currentState = EntitiesState.attack;
         anim.SetBool("attack", true);
-      
+       
         yield return new WaitForSeconds(0.5f);
         currentState = EntitiesState.walk;
         anim.SetBool("attack", false);
