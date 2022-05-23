@@ -203,6 +203,7 @@ MonoBehaviour:
   dialogValue: {fileID: 11400000, guid: 68f0c53feaf856d4986926a53ef9f266, type: 2}
   dialogHolder: {fileID: 1452241516}
   choiceHolder: {fileID: 1445672776}
+  dialogScroll: {fileID: 782597644}
 --- !u!1001 &66298472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5532,6 +5533,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c602826455fd0894496312989c2924ee, type: 3}
+--- !u!114 &782597644 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1870668640, guid: f35683ed45cfa954399951463df16000, type: 3}
+  m_PrefabInstance: {fileID: 1369151167}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &784806175
 PrefabInstance:
   m_ObjectHideFlags: 0
