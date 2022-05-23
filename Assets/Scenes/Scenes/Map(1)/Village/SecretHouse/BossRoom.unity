@@ -10720,7 +10720,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &567018232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12365,6 +12365,58 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1982161711 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2860222745790493270, guid: 146149f7649d0684eaeb2a4b93209206, type: 3}
+  m_PrefabInstance: {fileID: 645260677}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1982161712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982161711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb57b9123952bd74a95657eb210e7cfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
+  maxHealth: 3
+  health: 0
+  entitieName: Rickard
+  baseAttack: 1
+  movespeed: 1.5
+  deathEffect: {fileID: 8331670661874001750, guid: c99511478afa08e45b478511abf97807, type: 3}
+  deathEffectTimer: 1
+  thisLoot: {fileID: 11400000, guid: 5baf2b2ca9ddb5348b485d54756230b0, type: 2}
+  roomSignal: {fileID: 11400000, guid: 062fd32e882d8ec4bbfc4557870910dc, type: 2}
+  logRigidbody: {fileID: 1982161716}
+  target: {fileID: 0}
+  chaseRadius: 50
+  attackRadius: 2
+  anim: {fileID: 645260678}
+--- !u!114 &1982161713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982161711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4c71356aeaf74041850b4b849a525b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 3
+  knockTime: 0.3
+  damage: 1
+--- !u!50 &1982161716 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 2860222745790493267, guid: 146149f7649d0684eaeb2a4b93209206, type: 3}
+  m_PrefabInstance: {fileID: 645260677}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1983050436
 GameObject:
   m_ObjectHideFlags: 0
@@ -13026,7 +13078,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb307927b6a4197418adeb3ca056ad9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  signal: {fileID: 11400000, guid: 67b4547f2adbac941a3ed9994dfc1044, type: 2}
   signalEvent:
     m_PersistentCalls:
       m_Calls:
@@ -13042,6 +13093,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  signal: {fileID: 11400000, guid: 67b4547f2adbac941a3ed9994dfc1044, type: 2}
 --- !u!114 &1932749225802263303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13644,7 +13696,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb307927b6a4197418adeb3ca056ad9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  signal: {fileID: 11400000, guid: 352b5b93a81545b4e96313c3ec767cfc, type: 2}
   signalEvent:
     m_PersistentCalls:
       m_Calls:
@@ -13660,6 +13711,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  signal: {fileID: 11400000, guid: 352b5b93a81545b4e96313c3ec767cfc, type: 2}
 --- !u!114 &8311984711963452789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13830,7 +13882,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb307927b6a4197418adeb3ca056ad9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  signal: {fileID: 11400000, guid: f27f7d5bf67541e4cb217ba97cde5f80, type: 2}
   signalEvent:
     m_PersistentCalls:
       m_Calls:
@@ -13846,6 +13897,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  signal: {fileID: 11400000, guid: f27f7d5bf67541e4cb217ba97cde5f80, type: 2}
 --- !u!114 &8311984712595889839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13858,7 +13910,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb307927b6a4197418adeb3ca056ad9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  signal: {fileID: 11400000, guid: 97dbd2173b8e5fd499b83e3abb6fb445, type: 2}
   signalEvent:
     m_PersistentCalls:
       m_Calls:
@@ -13874,6 +13925,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  signal: {fileID: 11400000, guid: 97dbd2173b8e5fd499b83e3abb6fb445, type: 2}
 --- !u!114 &8311984712953424816
 MonoBehaviour:
   m_ObjectHideFlags: 0
