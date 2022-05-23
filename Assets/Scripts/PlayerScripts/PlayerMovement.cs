@@ -11,7 +11,7 @@ public enum PlayerState
     idle
 }
 
-public class PlayerMovement : MonoBehaviour, ISavable
+public class PlayerMovement : MonoBehaviour
 {
     public PlayerState currentState;
     public float speed = 5f;
@@ -83,20 +83,7 @@ public class PlayerMovement : MonoBehaviour, ISavable
         else if(currentState == PlayerState.walk || currentState == PlayerState.idle)
         {
             UpdateAnimationAndMove();
-            if (Input.GetKeyDown(KeyCode.O))
-            {
-                SavingSystem.i.Save("saveSlot1");
-            }
-            if (Input.GetKeyDown(KeyCode.P))
-            {
-                SavingSystem.i.Load("saveSlot1");
-            }
         }                   
-
-       
-
-
-
     }
 
     // Attack animation method
@@ -232,15 +219,24 @@ public class PlayerMovement : MonoBehaviour, ISavable
         triggerCollider.enabled = true;
     }
 
-    public object CaptureState()
+    public void SavePlayer()
     {
-        float[] position = new float[] { transform.position.x, transform.position.y };
-        return position;
+        SaveSystem.SavePlayer(this);
     }
 
-    public void RestoreState(object state)
+    public void LoadPlayer()
     {
-       var position = (float[])state;
-        transform.position = new Vector3(position[0], position[1]);
+       PlayerData data = SaveSystem.LoadPlayer();
+
+        playerInventory = data.playerInventory;
+        currentHealth = data.health;
+       
+
+        Vector3 position;
+        position.x = data.position[0];
+        position.y = data.position[1];
+        position.z = data.position[2];
+        transform.position = position;
     }
+
 }
