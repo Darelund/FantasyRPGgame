@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public enum PlayerState
 {
@@ -19,12 +21,14 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 change;
     private Animator playerAnimator;
     public FloatValue currentHealth;
+    
     public SignalObserver playerHealthSignal;
     public VectorValue startingPosition;
     public Inventory playerInventory;
     public SpriteRenderer receivedItemSprite;
     public SignalObserver playerHit;
     public SignalObserver reduceMagic;
+    public GameManagerIsh gameManager;
 
     [Header("IFrame stuff")]
     public Color flashColor;
@@ -84,6 +88,10 @@ public class PlayerMovement : MonoBehaviour
         {
             UpdateAnimationAndMove();
         }                   
+
+        
+
+
     }
 
     // Attack animation method
@@ -187,6 +195,7 @@ public class PlayerMovement : MonoBehaviour
        else
         {
             this.gameObject.SetActive(false);
+            SceneManager.LoadScene("DeathScene");
         }
     }
 
