@@ -23,6 +23,7 @@ public class Entities : MonoBehaviour
     public int baseAttack;
     public float movespeed;
     private Vector2 homePosition;
+   
 
     [Header("Death Effects")]
     public GameObject deathEffect;
@@ -33,9 +34,10 @@ public class Entities : MonoBehaviour
     [Header("Death signal")]
     public SignalObserver roomSignal;
 
-    private void Awake()
+    public virtual void Awake()
     {
        health = maxHealth;
+      
        homePosition = transform.position;
     }
 
@@ -46,10 +48,12 @@ public class Entities : MonoBehaviour
         currentState = EntitiesState.idle;
     }
 
-    private void TakeDamage(float damage)
+    public virtual void TakeDamage(float damage)
     {
         health -= damage;
-        if(health <= 0)
+        
+       
+        if (health <= 0)
         {
             DeathEffect();
             MakeLoot();
@@ -61,7 +65,7 @@ public class Entities : MonoBehaviour
         }
     }
 
-    private void MakeLoot()
+    public void MakeLoot()
     {
         if(thisLoot != null)
         {
@@ -75,7 +79,7 @@ public class Entities : MonoBehaviour
 
 
 
-    private void DeathEffect()
+    public void DeathEffect()
     {
         if(deathEffect != null)
         {

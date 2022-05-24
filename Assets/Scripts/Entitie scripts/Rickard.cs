@@ -5,12 +5,32 @@ using UnityEngine;
 public class Rickard : Log
 {
    
+    public HealthBar healthBar;
+
     public override void Start()
     {
         currentState = EntitiesState.idle;
         logRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         target = GameObject.FindWithTag("Player").transform;
+        healthBar.SetMaxhealth(maxHealth);
+    }
+
+    public override void TakeDamage(float damage)
+    {
+        health -= damage;
+
+        healthBar.SetHealth(health);
+        if (health <= 0)
+        {
+            DeathEffect();
+            MakeLoot();
+            if (roomSignal != null)
+            {
+                roomSignal.Raise();
+            }
+            this.gameObject.SetActive(false);
+        }
     }
 
 
@@ -49,4 +69,7 @@ public class Rickard : Log
         currentState = EntitiesState.walk;
         anim.SetBool("attack", false);
     }
+
+
+   
 }
