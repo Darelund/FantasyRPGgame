@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class DeathPanelThing : MonoBehaviour
 {
+    private PlayerMovement player;
+    private FloatValue value;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +21,10 @@ public class DeathPanelThing : MonoBehaviour
 
     public void Retry()
     {
+       
+        
         SceneManager.LoadScene("OpeningCutscene");
+       
     }
 
     // Need to be added

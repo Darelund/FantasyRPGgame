@@ -195,7 +195,9 @@ public class PlayerMovement : MonoBehaviour
        else
         {
             this.gameObject.SetActive(false);
+            currentHealth.RunTimeValue = currentHealth.initialValue;
             SceneManager.LoadScene("DeathScene");
+            
         }
     }
 
