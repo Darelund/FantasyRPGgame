@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 4218537865566965266}
   - component: {fileID: 2675887755657064839}
   - component: {fileID: 2675887755657064832}
-  - component: {fileID: 2675887755657064835}
   m_Layer: 8
   m_Name: Boss
   m_TagString: Entities
@@ -30,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4218537865566965270}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -24.44, y: 46.79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -100,7 +99,7 @@ Animator:
   m_GameObject: {fileID: 4218537865566965270}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f9466c0c9e2aa184299d4b7e3936d26e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -198,33 +197,3 @@ MonoBehaviour:
   thrust: 4
   knockTime: 0.3
   damage: 1
---- !u!114 &2675887755657064835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4218537865566965270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 978e42f4e9688e8438b0360538ac1a0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentState: 1
-  maxHealth: 3
-  health: 0
-  entitieName: Turret_Guardian
-  baseAttack: 0
-  movespeed: 0
-  deathEffect: {fileID: 8331670661874001750, guid: c99511478afa08e45b478511abf97807, type: 3}
-  deathEffectTimer: 1
-  thisLoot: {fileID: 0}
-  roomSignal: {fileID: 11400000, guid: c36ad392c80d06941aaac6b0d172e9f8, type: 2}
-  logRigidbody: {fileID: 4218537865566965267}
-  target: {fileID: 0}
-  chaseRadius: 5
-  attackRadius: 2
-  anim: {fileID: 0}
-  projectile: {fileID: 270219209047813775, guid: db179228aedd6d14cb775a7463d6dd05, type: 3}
-  fireDelay: 0.7
-  canFire: 1

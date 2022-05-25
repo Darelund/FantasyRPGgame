@@ -15,6 +15,7 @@ public class TurretEnemy : Log
         if(fireDelaySeconds <= 0)
         {
             canFire = true;
+            
             fireDelaySeconds = fireDelay;
         }
     }
