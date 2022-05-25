@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject sike;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,17 +26,24 @@ public class MainMenu : MonoBehaviour
     // Need to be added
     public void LoadGame()
     {
-        
+        sike.SetActive(true);
     }
 
     // Need to be added
     public void Options()
     {
-       
+     
     }
 
     public void QuitToDesktop()
     {
         Application.Quit();
+    }
+
+
+    public void GoBack()
+    {
+        sike.SetActive(false);
+        SceneManager.LoadScene("MainMenu");
     }
 }

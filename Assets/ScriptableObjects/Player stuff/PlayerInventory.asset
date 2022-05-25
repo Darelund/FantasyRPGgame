@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentItem: {fileID: 0}
   items:
-  - {fileID: -6842353155106088922, guid: 0000000000000000d000000000000000, type: 0}
-  numberOfKeys: 100
-  numberOfBasementKeys: 0
-  numberOfSeaKeys: 11
-  numberOfCastleKeys: 10
-  numberOfDungeonKeys: 2
-  coins: 10
-  maxMagic: 1000
-  currentMagic: 1000
+  - {fileID: 3, guid: 9f6735934f1934f448e5884d3ca69780, type: 3}
+  numberOfKeys: 0
+  numberOfBasementKeys: 1
+  numberOfSeaKeys: 0
+  numberOfCastleKeys: 0
+  numberOfDungeonKeys: 0
+  coins: 0
+  maxMagic: 500
+  currentMagic: 500
