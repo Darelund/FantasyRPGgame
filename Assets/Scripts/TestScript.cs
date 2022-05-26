@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TestScript : MonoBehaviour
 {
+    public string[] array;
+
 
     // Start is called before the first frame update
     void Start()
@@ -13,7 +15,9 @@ public class TestScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-
+      foreach(string i in array)
+        {
+            Debug.Log(i);        
+        }
     } 
 }
