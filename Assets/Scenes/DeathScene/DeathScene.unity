@@ -194,7 +194,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Yet another human have died...
+  m_Text: Yet another human has died...
 --- !u!222 &150920460
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3870,7 +3870,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Where am I? and...
+  m_Text: Where am I?
 --- !u!222 &1520354382782216897
 CanvasRenderer:
   m_ObjectHideFlags: 0
