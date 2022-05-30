@@ -45,6 +45,9 @@ EditorBuildSettings:
     path: Assets/Scenes/DeathScene/DeathScene.unity
     guid: 077d5104547d9a349a8e6849a8d5e98f
   - enabled: 1
+    path: Assets/Scenes/Scenes/Map(1)/Sea/Water_Hideout/WaterHideout.unity
+    guid: 0d7732cb56ab2fc499ee946d7806ab9b
+  - enabled: 1
     path: Assets/Scenes/Scenes/Map(1)/Village/Village houses/Bedshop.unity
     guid: e1fe2d438fe230942a38fd9450d90229
   m_configObjects: {}

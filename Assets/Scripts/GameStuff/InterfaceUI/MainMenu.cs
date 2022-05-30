@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public GameObject sike;
+    public GameObject sike2;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +33,7 @@ public class MainMenu : MonoBehaviour
     // Need to be added
     public void Options()
     {
-     
+        sike2.SetActive(true);
     }
 
     public void QuitToDesktop()
