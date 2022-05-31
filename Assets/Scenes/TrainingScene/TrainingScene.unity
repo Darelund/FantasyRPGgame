@@ -393,7 +393,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.000030517578, y: -0.22629929}
+  m_AnchoredPosition: {x: 0.000030517578, y: -0.2263012}
   m_SizeDelta: {x: -0.000068665, y: 0.4526}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &398798471
@@ -1353,7 +1353,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Press "" if you want to open your inventory
+  m_Text: 'Press "I" if you want to open your inventory
 
 '
 --- !u!222 &713636446
@@ -1638,7 +1638,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: oh nooo! Monsters! kill them if you want to live...
+  m_Text: Go to the stairs if you want to continue the game!
 --- !u!222 &898768192
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5476,7 +5476,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press ESC for pause Menu
+  m_Text: Press "ESC" for pause Menu
 --- !u!222 &1212769675
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -53112,7 +53112,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Go to the stairs if you want to continue the game!
+  m_Text: use "E" for interactions
 --- !u!222 &1416736005
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -54056,7 +54056,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.0289993, y: 0.000047683716}
+  m_AnchoredPosition: {x: -1.0289955, y: 0.000047683716}
   m_SizeDelta: {x: 2.058, y: 0.000040054}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2029310677 stripped
@@ -54099,7 +54099,7 @@ RectTransform:
   m_GameObject: {fileID: 2031393684}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.09, y: 0.82, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 864059298}
@@ -54110,8 +54110,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.4919, y: -76.7829}
-  m_SizeDelta: {x: 160.9837, y: 40.1659}
+  m_AnchoredPosition: {x: 20.5, y: -28.86}
+  m_SizeDelta: {x: 109, y: -0.0166}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2031393688
 MonoBehaviour:
@@ -54885,7 +54885,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Walk on W, A, S, D
+  m_Text: Walk on "W, A, S, D"
 --- !u!224 &7604498535036091682
 RectTransform:
   m_ObjectHideFlags: 0
