@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,6 +69,42 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -78,7 +114,742 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: TruebOSS_Right
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 191
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19bcd7c07f381d468075051924852e0
+      internalID: 879438600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 191
+        width: 19
+        height: 26
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1734cf5340835b948a35470b92445fe8
+      internalID: -468495680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_2
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 191
+        width: 19
+        height: 26
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6057d4e45877343955056431152ec7
+      internalID: -22936053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_3
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 191
+        width: 19
+        height: 26
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b0c010a8619a742bc3174daf10d2a1
+      internalID: 658267105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_4
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 163
+        width: 30
+        height: 36
+      alignment: 9
+      pivot: {x: 0.6376816, y: 0.6794345}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5af127c27cc4343a1e0c5f3030d304
+      internalID: 1241201758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_5
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 163
+        width: 30
+        height: 36
+      alignment: 9
+      pivot: {x: 0.5466568, y: 0.6569188}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f56f59dc6e5a4489744b7812f16c16
+      internalID: 1450416662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_6
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 163
+        width: 30
+        height: 36
+      alignment: 9
+      pivot: {x: 0.34329426, y: 0.6546673}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0f026012facf746adbf04635a55f7e
+      internalID: -1080526567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_7
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 163
+        width: 34
+        height: 36
+      alignment: 9
+      pivot: {x: 0.33073875, y: 0.6569188}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d57e0e8f1bd404dbd596eec9e73d39
+      internalID: -1436830850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_8
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 158
+        width: 17
+        height: 26
+      alignment: 9
+      pivot: {x: 0.49658877, y: 0.5446179}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa83118f6b1ae6498bd4963f3e9b31e
+      internalID: 592084770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_9
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 159
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb7351558fbdcb45b6d23dac8bfc633
+      internalID: -527267589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_10
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 159
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6ef919a4c992442a1d0c98b9498062
+      internalID: -737787332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_11
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 159
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788c6321e2a03f14fb6d89ec587e0c06
+      internalID: 1495807731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_Up2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 133
+        width: 19
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5184471, y: 0.33609536}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d87a1c2587fe74cadf0ff78064d542
+      internalID: -1335113847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_13
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 128
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42704d1fa73b4294b8b3f7e0cc6a44f3
+      internalID: 44186613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_14
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 128
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61cd231264a9878479518bd4d5d957b4
+      internalID: -1373443330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_15
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 128
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15dc2f2fac6749143bb3374845c6bc40
+      internalID: 1491926316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_16
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 128
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845ce8a9de4bcbb489b1382c910b5a50
+      internalID: -15052452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_Up0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 133
+        width: 31
+        height: 24
+      alignment: 9
+      pivot: {x: 0.31866604, y: 0.43919182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d401068fa69f948825929acfc3eb9a
+      internalID: -2055791255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_Up1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 133
+        width: 27
+        height: 27
+      alignment: 9
+      pivot: {x: 0.3683596, y: 0.35124433}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f563dd5bd3cd7c46951a9ed5386a934
+      internalID: -1267265147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_Up3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 133
+        width: 19
+        height: 26
+      alignment: 9
+      pivot: {x: 0.5206347, y: 0.38041863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73835f4295e8da4381fa6245074ac3a
+      internalID: 1264964039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_20
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 95
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ac00c2efa8b2347a142fd5cdb75e10
+      internalID: -1617245237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_21
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 95
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7dfc482fcb1e3944b47f6e377ee8abb
+      internalID: 1390554752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_22
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 95
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72bfdb51d45167e4d8200d72b98ea7b9
+      internalID: 98326156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_23
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 95
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3335bfb7411c1b8408f30d48b9eecd9a
+      internalID: -1954958624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_Right0
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 88
+        width: 22
+        height: 29
+      alignment: 9
+      pivot: {x: 0.4314048, y: 0.53834456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7326c39f6a760504b91e1e846cf13dd0
+      internalID: -560880084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_Right1
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 94
+        width: 28
+        height: 23
+      alignment: 9
+      pivot: {x: 0.3415669, y: 0.41126683}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11138c63085c3104aa29119a389612d7
+      internalID: -411504908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_Right2
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 94
+        width: 28
+        height: 24
+      alignment: 9
+      pivot: {x: 0.34374672, y: 0.404013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86e7b7eef3e6a749bfb921fd4b83f68
+      internalID: -900001732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_Right3
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 94
+        width: 24
+        height: 24
+      alignment: 9
+      pivot: {x: 0.39409766, y: 0.40071678}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049c62c48af2d784ea6c44d00f8b5434
+      internalID: -537642274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_28
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 31
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a70fff4fe658a24b96fd5f1e06f690d
+      internalID: 2023715610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_29
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 30
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a02c8b641be5e4798ac203e452d432
+      internalID: 1104205404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_Left0
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 48
+        width: 22
+        height: 30
+      alignment: 9
+      pivot: {x: 0.52194905, y: 0.5193152}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb5448b1fbc676478fb3a2e7f02e638
+      internalID: -83942882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_Left1
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 54
+        width: 29
+        height: 24
+      alignment: 9
+      pivot: {x: 0.65985215, y: 0.4315904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd34f33d64a5b2b4e9a91b04f5d66b9c
+      internalID: -1396127332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_Left2
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 54
+        width: 26
+        height: 24
+      alignment: 9
+      pivot: {x: 0.6349816, y: 0.4352398}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7043fe63fa7b27b4b96907b705a8d6ec
+      internalID: -125284189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_Left3
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 54
+        width: 26
+        height: 24
+      alignment: 9
+      pivot: {x: 0.6388878, y: 0.43773937}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070998d8cbbfa9049a8fd822a668577c
+      internalID: 1413712987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruebOSS_36
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 31
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa867f6dc97102d40bc25cf3347b44a2
+      internalID: -1848910300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -89,7 +860,46 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TruebOSS_36: -1848910300
+      TruebOSS_6: -1080526567
+      TruebOSS_2: -22936053
+      TruebOSS_Right: 879438600
+      TruebOSS_10: -737787332
+      TruebOSS_9: -527267589
+      TruebOSS_Left0: -83942882
+      TruebOSS_14: -1373443330
+      TruebOSS_29: 1104205404
+      TruebOSS_Right1: -411504908
+      TruebOSS_31: -1381503301
+      TruebOSS_Up1: -1267265147
+      TruebOSS_38: -696599996
+      TruebOSS_Left1: -1396127332
+      TruebOSS_22: 98326156
+      TruebOSS_28: 2023715610
+      TruebOSS_Left2: -125284189
+      TruebOSS_Up0: -2055791255
+      TruebOSS_Left3: 1413712987
+      TruebOSS_23: -1954958624
+      TruebOSS_11: 1495807731
+      TruebOSS_1: -468495680
+      TruebOSS_3: 658267105
+      TruebOSS_13: 44186613
+      TruebOSS_8: 592084770
+      TruebOSS_15: 1491926316
+      TruebOSS_5: 1450416662
+      TruebOSS_Up3: 1264964039
+      TruebOSS_Right0: -560880084
+      TruebOSS_30: 1902042889
+      TruebOSS_16: -15052452
+      TruebOSS_7: -1436830850
+      TruebOSS_Right3: -537642274
+      TruebOSS_4: 1241201758
+      TruebOSS_21: 1390554752
+      TruebOSS_37: -63788369
+      TruebOSS_Up2: -1335113847
+      TruebOSS_20: -1617245237
+      TruebOSS_Right2: -900001732
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
