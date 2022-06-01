@@ -56,4 +56,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WinGame/GodBattle.unity
     guid: a66272b68d2ca7043ac9dd17b9417390
+  - enabled: 1
+    path: Assets/Scenes/Scenes/Map(1)/Village/Village houses/Women.unity
+    guid: 1379bba1d2261be40b99b7f08bf00921
   m_configObjects: {}
