@@ -43,4 +43,9 @@ public class WinPanelThing : MonoBehaviour
     {
         SceneManager.LoadScene("GameFinished");
     }
+
+    public void GameTurnOff()
+    {
+        Application.Quit();
+    }
 }

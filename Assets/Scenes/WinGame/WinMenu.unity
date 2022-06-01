@@ -194,7 +194,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Another innocent human died...
+  m_Text: Another innocent human has died...
 --- !u!222 &150920460
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1160,7 +1160,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '*Click*'
+  m_Text: God> - Its alright, take my hand!
 --- !u!222 &764928178
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1519,7 +1519,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ...huh.... .. aa I guess this is how it ends?
+  m_Text: Player> - Fucking psychopath
 --- !u!222 &957933855
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2018,7 +2018,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1124244021}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: bce1ffbbd42eebd4eaa56edb37c6b3da, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: af2a50e4cab665f45b9005eaef061427, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -2068,6 +2068,44 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 7560715698795832226, guid: bce1ffbbd42eebd4eaa56edb37c6b3da, type: 2}
     value: {fileID: 1961469510}
+  - key: {fileID: -3136268905490006048, guid: af2a50e4cab665f45b9005eaef061427, type: 2}
+    value: {fileID: 2140567990}
+  - key: {fileID: 8144813700097505881, guid: af2a50e4cab665f45b9005eaef061427, type: 2}
+    value: {fileID: 2140567990}
+  - key: {fileID: -469913261846848679, guid: af2a50e4cab665f45b9005eaef061427, type: 2}
+    value: {fileID: 1520354384008187127}
+  - key: {fileID: -6764344757817868110, guid: af2a50e4cab665f45b9005eaef061427, type: 2}
+    value: {fileID: 242259833}
+  - key: {fileID: 5760483193170651015, guid: af2a50e4cab665f45b9005eaef061427, type: 2}
+    value: {fileID: 617854367}
+  - key: {fileID: -336129274385494294, guid: af2a50e4cab665f45b9005eaef061427, type: 2}
+    value: {fileID: 1087277251}
+  - key: {fileID: -2051351842229234051, guid: af2a50e4cab665f45b9005eaef061427, type: 2}
+    value: {fileID: 1884301562}
+  - key: {fileID: -1405952065921793869, guid: af2a50e4cab665f45b9005eaef061427, type: 2}
+    value: {fileID: 322385875}
+  - key: {fileID: -837261379631070698, guid: af2a50e4cab665f45b9005eaef061427, type: 2}
+    value: {fileID: 1696120312}
+  - key: {fileID: -7315211575608988475, guid: af2a50e4cab665f45b9005eaef061427, type: 2}
+    value: {fileID: 207426713}
+  - key: {fileID: -7401976552041688617, guid: af2a50e4cab665f45b9005eaef061427, type: 2}
+    value: {fileID: 1760237747}
+  - key: {fileID: 7122714397065265337, guid: af2a50e4cab665f45b9005eaef061427, type: 2}
+    value: {fileID: 910866886}
+  - key: {fileID: -7855862198349589056, guid: af2a50e4cab665f45b9005eaef061427, type: 2}
+    value: {fileID: 1514627195}
+  - key: {fileID: -679245247413326499, guid: af2a50e4cab665f45b9005eaef061427, type: 2}
+    value: {fileID: 1651785833}
+  - key: {fileID: 83703403256108295, guid: af2a50e4cab665f45b9005eaef061427, type: 2}
+    value: {fileID: 464560093}
+  - key: {fileID: -7278182278522866263, guid: af2a50e4cab665f45b9005eaef061427, type: 2}
+    value: {fileID: 975704380}
+  - key: {fileID: 5362256675830612436, guid: af2a50e4cab665f45b9005eaef061427, type: 2}
+    value: {fileID: 393364469}
+  - key: {fileID: 5040843031619866481, guid: af2a50e4cab665f45b9005eaef061427, type: 2}
+    value: {fileID: 1961469510}
+  - key: {fileID: 7330798873743477997, guid: af2a50e4cab665f45b9005eaef061427, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - 0c6dce13d9bfbe6468ab72964300642a: {fileID: 0}
@@ -2098,7 +2136,6 @@ GameObject:
   - component: {fileID: 1249079352}
   - component: {fileID: 1249079351}
   - component: {fileID: 1249079350}
-  - component: {fileID: 1249079353}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2172,102 +2209,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1249079353
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1249079349}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f8689530c45e29f42bdf21b5de535c4d, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.5
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1295880340
 GameObject:
   m_ObjectHideFlags: 0
@@ -3331,7 +3272,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: goodbye... Life could have been better...
+  m_Text: God> - HUH! what did you say you little shit
 --- !u!222 &1959618329
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3518,7 +3459,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: I wish I didnt waste my li...
+  m_Text: I am going to fucking kill you!
 --- !u!222 &1995738626
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3678,7 +3619,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Why even try.. Right?
+  m_Text: God> - join me
 --- !u!222 &2048066589
 CanvasRenderer:
   m_ObjectHideFlags: 0
