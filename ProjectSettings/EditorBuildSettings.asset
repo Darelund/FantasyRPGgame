@@ -59,4 +59,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scenes/Map(1)/Village/Village houses/Women.unity
     guid: 1379bba1d2261be40b99b7f08bf00921
+  - enabled: 1
+    path: Assets/Scenes/WinGame/WinMenu.unity
+    guid: 635eddaf188f76347af9974781974540
   m_configObjects: {}

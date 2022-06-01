@@ -348,7 +348,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dialog
+  m_Text: Player> - I will never forgive you!
 --- !u!222 &295292920
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4685,7 +4685,9 @@ PlayableDirector:
   - key: {fileID: 995381091818543139, guid: 0adf697f612b22840bd2e029e06b2bf7, type: 2}
     value: {fileID: 1015135043}
   - key: {fileID: 4223155369013673323, guid: 0adf697f612b22840bd2e029e06b2bf7, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1620820063}
+  - key: {fileID: -8943776574032786119, guid: 0adf697f612b22840bd2e029e06b2bf7, type: 2}
+    value: {fileID: 77627971}
   m_ExposedReferences:
     m_References: []
 --- !u!1001 &386947208
@@ -5192,7 +5194,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: God> - Gol.. I made you, do not go against me
+  m_Text: God> - ... I made you, do not go against me
 --- !u!222 &1018401807
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5395,11 +5397,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 989cf244e41354447927edc7ef0b024e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -5990,7 +5992,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dialog
+  m_Text: God> - Fucking child, die!
 --- !u!222 &1712802927
 CanvasRenderer:
   m_ObjectHideFlags: 0
