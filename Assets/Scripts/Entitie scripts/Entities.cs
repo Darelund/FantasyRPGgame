@@ -7,7 +7,8 @@ public enum EntitiesState
     idle,
     walk,
     attack,
-    stagger
+    stagger,
+    animeRage
 
 }
 
