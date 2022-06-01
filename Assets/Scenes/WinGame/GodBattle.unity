@@ -537,7 +537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  maxHealth: 1
+  maxHealth: 150
   health: 0
   entitieName: TrueBoss
   baseAttack: 1

@@ -194,7 +194,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Another innocent human has died...
+  m_Text: Robert/Rickard/Ha, an innocent human who died...
 --- !u!222 &150920460
 CanvasRenderer:
   m_ObjectHideFlags: 0
