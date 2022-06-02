@@ -31789,7 +31789,7 @@ PrefabInstance:
       objectReference: {fileID: 1346803065}
     - target: {fileID: 8463177757807732651, guid: 74697624c5db291488086f0047a754b5, type: 3}
       propertyPath: maxHealth
-      value: 1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8463177757807732651, guid: 74697624c5db291488086f0047a754b5, type: 3}
       propertyPath: deathEffect
